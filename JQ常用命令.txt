@@ -1,0 +1,259 @@
+
+******************入口函数*******************
+
+$(function (){})                    写法1
+$(document).ready(function (){})    写法2
+
+******************基本选择器*******************
+
+$("#div1")                          ID选择器
+$(".div1")                          类选择器
+$("div1")                           标签选择器
+$("*")                              通配符选择器
+$(".div1,div")                      并集选择器
+$("li#b03")                         交集选择器
+
+******************层级选择器*******************
+
+$("div span")                       后代选择器
+$("div > span")                     子代选择器
+$("div + p")                        紧邻选择器
+$("div ~ p")                        兄弟选择器
+
+******************过滤选择器*******************
+
+$("li:eq(1)")                       选择第index个
+$("li:ge(2)")                       选择大于index的元素
+$("li:lt(3)")                       选择小于index的元素
+$("li:odd")                         选择所有奇数行
+$("li:even")                        选择所有偶数行
+$("li:first")                       选择第一个
+$("li:last")                        选择最后一个
+
+******************属性选择器*******************
+
+$("a[href]")                        选择有href属性的a
+$("a[href='...']")                  选择href是...的属性
+$("a[href!='...']")                 选择href不是...的属性
+$("a[href^='...']")                 以...为开头的都被选中
+$("a[href$='...']")                 以...为结尾的都被选中
+$("a[href*='...']")                 包含...的都被选中
+$("a[href][title*='aa']")           有href属性并且title属性包含aa的
+
+
+******************筛选选择器*******************
+
+$("div").eq(1)                      选择第index个元素
+$("div").first()                    选择第1元素
+$("div").parent()                   选择父级
+
+$("div").parent(".class")           选择(父级)       并且要满足筛选条件的
+                   ID               筛选条件
+                   div              筛选条件
+
+$("div").siblings(".class")         选择它所有(兄弟)  并且要满足筛选条件的
+                   ID               筛选条件
+                   div              筛选条件
+
+$("div").find(".class")             选择它(后代)      并且要满足筛选条件的
+                   ID               筛选条件
+                   div              筛选条件
+
+$("div").children(".class")         选择它(子级)      并且要满足筛选条件的
+                   ID               筛选条件
+                   div              筛选条件
+
+******************操作元素*******************
+
+.end()                              回到所选首元素
+.next("p")                          选择下一个元素
+.height("100px")                    设置高度
+.height()                           获取高度(返回值的是number类型的)
+.width("100px")                     设置宽度
+.width()                            获取宽度(返回值的是number类型的)
+                                    css方法获取的是String类型的
+.each(function (index,ele){})       遍历所选元素
+.map(function (ele,index){})        也是遍历元素，有返回值用map
+
+
+******************移入移出方法*******************
+
+.mouseover()                        移入  (子级也触发)
+.mouseout()                         移出  (子级也触发)
+
+.mouseenter()                       移入  (子级无效)
+.mouseleave()                       移出  (子级无效)
+
+.hover(fn1,fn2)                     移入执行fn1  移出执行fn2
+.hover(fn)                          移入移出都是执行fn
+
+
+******************动画基本效果*******************
+
+.show()                             (显示)
+.show(1000)                         时间
+.show("slow")                       速度模式1
+.show("fast")                       速度模式2
+.show("normal")                     速度模式3
+.show(1000,function (){})           动画结束后执行函数
+
+.hide()                             (隐藏)
+.hide(1000)                         时间
+.hide("slow")                       速度模式1
+.hide("fast")                       速度模式2
+.hide("normal")                     速度模式3
+.hide(1000,function (){})           动画结束后执行函数
+
+******************上下滑动*******************
+
+第一个参数:动画执行的时长
+第二个参数:动画效果
+第三个参数:执行成功后要执行的函数
+
+.slideDown()                         下拉滑动
+.slideDown(3000)                     时间
+.slideDown(3000,"linear",fn(){})     匀速
+.slideDown(3000,"swing",fn(){})      缓冲
+
+
+.slideup()                           上滑动
+.slideup(3000)                       时间
+.slideup(3000,"linear",fn(){})       匀速
+.slideup(3000,"swing",fn(){})        缓冲
+
+.slideToggle()                       滑动切换
+
+******************淡入淡出*******************
+
+.fadeIn()                            淡入
+.fadeOut()                           淡出
+
+.fadeToggle()                        淡入淡出切换
+.fadeTo(1000,0.5)                    前面是时长，后面是透明度
+
+
+******************自定义动画*******************
+
+.animate({                           自定义动画
+    "width":"100px",                 第二个参数是时长
+    "height":"100px"
+},1000)
+
+******************动画停止*******************
+
+stop(false)                         停止当前动画，后续队列中的动画继续执行
+stop(true)                          停止当前动画，并清空后续队列中的所有动画
+stop(false,true)                    当前动画立即执行完毕，后续队列中的动画继续执行
+stop(true,true)                     当前动画立即执行完毕，并清空后续列队中的所有动画
+
+******************操作样式*******************
+
+.addClass("class")                  添加class  这里没有.
+.removeClass('class')               删除class
+.removeClass()                      删除所有class
+.toggleClass('cla2')                切换样式
+.toggleClass()                      无class切换
+var a=$('#div').hascClass()         判断有没有class 布尔值
+
+******************常用的DOM操作*******************
+
+.attr("title","value")              设置属性
+var a=$("div").attr("title")        获取属性
+.removeAttr("title")                移除属性
+
+$("#txt").val("设置值")              设置值
+var a =$("#txt").val()              获取值
+
+.html("内容")                       设置内容
+var a=$("#txt").html()              获取内容
+
+.text("我是文本内容")                设置文本内容
+var a= $("#div").text()             获取文本内容
+
+
+******************事件绑定*******************
+
+
+.on("click",这里是选择器,function (){})     事件绑定(支持所有)使用ON
+
+.bind("click",function (){})        事件绑定
+.bind({                             多个事件写法
+    "click":function (){},
+     "mouseenter":function (){}
+})
+.bind("click",{传参数},function (e){传递数据
+
+})
+.one("click",function(){})          只出发一次事件
+.delegate("li","click",function(){})事件委托
+
+.trigger()                          触发事件，并触发浏览器默认行为
+.triggerHandler()                   不能触发浏览器默认行为
+
+
+
+******************坐标值*******************
+
+.offset()                           他是一个对象里面俩个属性top和left
+.offset({                           设置后会变成相对定位
+    left:"100px",
+    top:"150px"
+})
+.offset().top                       距离页面上面距离
+.offset().left                      距离页面左面距离
+
+.position().top                     相对于父级元素上边距离(只读)
+.position().left                    相对于父级元素左边距离(只读)
+
+.scrollTop()                        获取滚动条位置
+.scrollTop(100)                     设置滚动条位置
+.scroll(function (){})              滚动条事件
+
+
+******************节点操作*******************
+
+$("#div").append("<p>...</p>")      追加节点
+$("<p>...</p>").appendTo($("div"))  追加节点加给谁
+
+$("div").prepemd("<p>..</p>")       往前加内容
+$("<p>...</p>").prepemdTo($("div")) 往前加内容  加给谁
+
+.after()                            向后添加元素(兄弟)
+$("<p>我在那?<p>").insertAfter($("div"))效果上面一样就是写法不一样
+
+.before()                           向前加元素(兄弟)
+$("<p>我在那?<p>").insertBefore($("div"))效果上面一样就是写法不一样
+
+.remove()                           自杀
+.empty()                            删除所有后代元素
+$("div").append($("p").clone(true)) 赋值节点 如果设置为true就连时间一起复制
+$("span").wrap($("div"))            后面元素包裹前面元素
+$("li").wrapAll($("div"))           所有li包裹在一个div里
+$("span").replacewith($("div"))     把span换成div
+
+******************事件对象*******************
+
+e.pagex                             鼠标X位置
+e.pagey                             鼠标y位置
+e.preventDefault()                  取消默认操作
+e.stoppropagation()                 取消事件冒泡
+e.type                              事件类型
+e.which                             鼠标的案件类型
+e.keycode                           键盘值
+e.target                            事件触发源，不一定===this
+e.data                              传递的额外事件响应方法的额外参数
+e.currentTarget===this
+
+
+
+******************jq对象数据缓存*******************
+
+.data("name",123)                   设置
+.data("name")                       获取
+
+
+******************插件机制*******************
+$.名=function (){                   添加全局方法
+
+}
+$.fn.名=function (){}               实例对象方法(fn是JQ原形链)

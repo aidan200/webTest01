@@ -1,0 +1,188 @@
+
+******************事件*******************
+onload                      某个页面或图像被完成加载
+onmouseover                 鼠标移入
+onmouseout                  鼠标移除
+onclick                     单机
+ondblclick	                鼠标双击某个对象
+onmousedown                 鼠标按住
+onmouseup                   鼠标松开
+onmousemove                 鼠标移动
+onscroll					滚动事件
+
+onpress                     键盘按下
+onkeydown                   键盘按住
+onkeyup                     键盘松开
+oncontextmenu               鼠标右键事件
+onsubmit                    表单提交事件
+onreset	                    form表单重置按钮被点击
+
+onselect	                文本被选定
+onfocus	                    元素获得焦点
+onblur	                    元素失去焦点
+
+onresize	                窗口或框架被调整尺寸
+onabort	                    图像加载被中断
+onchange	                当下拉框改变时
+onerror	                    当加载文档或图像时发生某个错误
+onunload	                用户退出页面
+
+******************选择元素*******************
+var aa=document.getElementById("id")            根据ID选择
+var bb=document.getElementsByTagName("li")      选择元素
+var cc=document.getElementsByName("name")       根据name选择
+
+******************操作数组*******************
+
+var arr=newArray(1,2)       创建数组
+var attr=[1,2,3,4]          字面量创建数组
+attr.unshift()              头添加
+attr.shift()                头删除
+attr.push()                 尾添加
+attr.pop()                  尾删除
+attr.sort()                 排序
+attr.concat(arrt2)          合并
+attr.join('-')              数组分割字符
+attr.split('-')             字符分割数组
+
+attr.splice( 开始位置，删几个)
+attr.splice( 0,3,'1','2','3')
+attr.splice( 0,3)
+
+******************事件对象*******************
+
+var  oEvent=ev||event       兼容的事件对象
+oEvent.clientX              鼠标X值
+oEvent.clientY              鼠标Y值
+oEvent.cancelBubble=true    取消事件冒泡
+
+oEvent.keyCode			    键盘值
+oEvent.ctrlkey			    ctrl事件
+oEvent.altkey			    alt事件
+oEvent.shiftkey			    shft事件
+
+******************时间对象*******************
+
+var oDate=new Date()	    创建时间对象
+oDate.getHours()            时
+oDate.getMinutes()          分
+oDate.getSeconds()          秒
+oDate.getFullYear()         年
+oDate.getMonth()            月
+oDate.getDate()             日
+oDate.getDay()              星期
+oDate.getTime()             详细时间
+
+******************定时器*******************
+
+setinterval()	            开启定时器
+clearinterval()	            关闭定时器
+
+setTimeout()	            只运行一次的定时器
+clearTimeout()              关闭运行一次的定时器
+
+******************计算后像素*******************
+
+ offsetWidth                计算后width
+ offsetHeight               计算后height
+ offsetLeft		            计算后left
+ offsetTop		            计算后top
+
+******************节点操作*******************
+
+document.createElement()      创建节点元素
+oul.appendChild('元素')        插入节点元素
+oul.insertBefore(元素,在谁前)   插在谁前面
+oul.removeChild)('节点')       删除节点元素
+oul.parentNode                 父级元素
+oul.innerHTML	               元素的内容
+
+
+document.createDocumentFragment()   	              文档碎片
+父级.childNodes					  	                  子节点会把空格和文字选中节点
+nodeType                				              节点类型  1元素节点   3文字节点
+children							                  子节点childNodes的兼容版
+offsetParent							              获取元素在页面上的实际位置
+oul.firstElementChild || oul. firstChild	          获取第一个子节点。用nodeType判断出来
+oul.lastElementChild || oul. lastChild	              获取最后一个节点。有兼容性问题
+oul.nextElementSibling || oul. nextSibling            上兄弟节点
+oul.previousElementSibling || oul .previousSibling	  下兄弟节点
+
+******************数据类型*******************
+
+string                          字符串
+boolean                         布尔
+object                          对象
+undefined                       未定义
+number	                        数字
+
+******************字符操作*******************
+
+charAt(3)                       在第几位置的字符
+toLowerCase()                   把字符串转换小写
+toUpperCase()                   把字符串转换大写
+search(‘字符串’)     	        返回字符串出现的位置
+
+
+******************数字操作*******************
+
+Math.ceil						数字向上取整
+Math.floor						数字向下取整
+parseint()                      强制转换成整数
+parseFloat()                    强制转换为浮点数(小数)
+isNaN                           判断是否是NAN
+NaN                             不是数字类型返回这个
+
+
+******************其他操作*******************
+
+arguments[0]                    函数动态参数
+default                         清除变量
+var j1=(a:1,b:2,c:3)            JSON
+for(attr in j1)                 把J1所有参数装到attr
+write()                         输出html标签或者文本
+
+getComputedStyle(bb,0).textAlign获取样式 FF写法
+bb.currentStyle.textAlign       IE写法
+
+document.documentElement.clientWidth  	 可视区宽度
+document.documentElement.clientHeight    可视区高度
+document.documentElement.scrollTop		 滚动距离FF兼容
+document.body.scrollTop					 滚动距离IE兼容
+
+******************事件绑定*******************
+
+元素.attachEvent(“什么事件”,函数)  事件绑定     IE支持
+元素.detachEvent()            	 解除事件绑定	  IE支持
+
+元素.addEventListener(“什么事件”,函数, false) 事件绑定    火狐支持
+元素.removeEventListener()				    解除事件绑定	火狐支持
+
+******************Ajax*******************
+
+var oAjax=new XMLHttpRequest();                     创建ajax对象
+var oAjax=new ActiveXObject("Microsoft.XMLHTTP")    IE用创建ajax对象
+oAjax.open('提交方法','url',是否异步)                 连接服务器
+oAjax.send( );							            发送请求
+
+oAjax .onreadystatechange                           Ajax用来请求状态监控的事件
+oAjax .readyState==4                                通信完成但不一定成功
+oAjax .status==200                                  结果成功
+
+******************设置元素的几种方式*******************
+
+otext.value='123'
+otext['value']='abc'
+otext.setAttribute('value','rtertw')
+
+******************DOM操作*******************
+
+window.location. href=“网址”             网址
+window.location.reload();                刷新网页
+window.navigator.userAgent				 提取浏览器信息
+window.location						     当前页面网址信息(位置)
+window.open.()                           关闭当前网页  但是必须是open出来的
+confirm('今天下雨了吗？')				     确定取消提示框确定是true  取消是float
+prompt( '输入姓名'，'张三')				 返回值字符串或者null
+
+window.open('about:blank','_self  _blank  _top  _ parent') BOM打开网页
