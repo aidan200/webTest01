@@ -1,0 +1,19 @@
+.zp_index_header{
+    height: 200px;
+    background: #f17c67;
+}
+.zp_index_cont{
+    width: 980px;
+
+    height: 200px;
+
+}
+.zp_index_cont_left{
+    padding: 0;
+}
+.zp_index_cont_left_top{
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    background: #00b95a;
+}
