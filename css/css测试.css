@@ -81,6 +81,20 @@ ul {
 .nav_1 li a:hover{
     background-color: transparent;
 }
+/*---------------------------footer----------------------*/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #575757;
+}
+
+
+
+
+
+
+
 
 /*-----------------------博客----------------------*/
 .blog_all {
@@ -167,7 +181,7 @@ ul {
     width: 100%;
     height: 50px;
     background-color: #ffffff;
-    border: 1px solid transparent;
+    border: 2px solid #ffffff;
     outline: none;
     padding-left: 10px;
 }
@@ -192,8 +206,9 @@ ul {
     position: absolute;
     top: 0;
     right: -90px;
-    text-align: center;
     color: #ffffff;
+    font-size: 16px;
+    outline: none;
 }
 
 
@@ -209,6 +224,31 @@ ul {
     top:0;
 }
 
+.blog_button2{
+    width: 200px;
+    background-color: #fc6866;
+    border: 2px solid #fc6866;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 2px;
+    margin: 30px auto;
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+/*.blog_button2:hover {*/
+    /*background-color: #ffffff;*/
+    /*border: 2px solid #fc6866;*/
+    /*color: #fc6866;*/
+    /*transition: 0.5s all;*/
+    /*-webkit-transition: 0.5s all;*/
+    /*-moz-transition: 0.5s all;*/
+    /*-o-transition: 0.5s all;*/
+    /*-ms-transition: 0.5s all;*/
+/*}*/
 
 
 /*博客右边*/
@@ -271,6 +311,7 @@ ul {
     text-align: center;
     color: #ffffff;
 }
+
 
 
 

@@ -14,6 +14,7 @@
 
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -73,6 +74,7 @@
         <div class="col-md-9 col-xs-12">
             <!--左面下面博文-->
             <div class="col-md-12 col-xs-12">
+                <!--轮播-->
                 <div id="myCarousel" class="blog_lun carousel slide">
                     <!-- 轮播（Carousel）指标 -->
                     <ol class="carousel-indicators">
@@ -98,20 +100,20 @@
                     <a class="carousel-control right" href="#myCarousel"
                        data-slide="next">&rsaquo;</a>
                 </div>
-
+                <!--搜索-->
                 <div class="blog_select">
                     <form action="">
                         <div class="blog_circle">
                             <div class="blog_s">
                                 <input type="text" class="blog_se">
-                                <button type="submit" class="blog_button">搜索</button>
+                                <button type="submit" class="blog_button">
+                                    <span class="fa fa-search fa-2x" style="color: #ffffff"></span>
+                                </button>
                             </div>
-
                         </div>
                     </form>
                 </div>
-
-
+                <!--博客内容-->
                 <div class="blog_content">
                     <div class="blog_every">
                         <div class="blog_head">
@@ -289,6 +291,9 @@
 
                     </div>
                 </div>
+                <div style="width: 100%;text-align: center">
+                    <button class="blog_button2">加载更多</button>
+                </div>
             </div>
 
             <div style="clear: both"></div>
@@ -301,15 +306,15 @@
                 <div style="text-align: center">
                     <h4 style="margin-top: 15px">金泰妍</h4>
                     <div style="margin-top: 10px">
-                        <span style="margin: 5px">关注 <span>156</span></span>
+                        <span style="margin: 5px">关注 <span>156</span></span> |
                         <span style="margin: 5px">粉丝 <span>454</span></span>
                     </div>
                     <div style="margin-top: 10px">
                         <span><img src="img/blog.png" alt="" class="blog_f"></span>&emsp;
-                        <span>发博文</span>
+                        <span><a href="">发博文</a></span>
                     </div>
                     <div style="margin-top: 10px">
-                        <span class="fa fa-bell"> 消息 (<span>20</span>)</span>
+                        <span class="fa fa-bell" style="color: #c7c7c7"> <a href="">消息 (<span>20</span>)</a></span>
                     </div>
 
                 </div>
@@ -358,6 +363,9 @@
     <div style="clear: both"></div>
 </div>
 
+<footer>
+
+</footer>
 
 </body>
 </html>
