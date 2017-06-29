@@ -44,49 +44,49 @@ ul {
 
 /*!*----------------------导航---------------------------*!*/
 
-/*.navbar-top{*/
-    /*background-color: #004098;*/
-/*}*/
-/*.navbar-bottom{*/
-    /*background-color: #0087d1;*/
-    /*border-top:#008dda;*/
-    /*box-shadow: 0 2px 4px rgba(0,0,0,.25);*/
-/*}*/
-/*.alllogo{*/
-    /*width: 150px;*/
-    /*height: 55px;*/
-    /*margin: 5px;*/
-/*}*/
-/*.navbar{*/
-    /*margin-bottom: 0;*/
-    /*border-radius: 0;*/
-/*}*/
-/*.navbar-nav{*/
-    /*float: right;*/
-/*}*/
-/*.navbar-nav li a{*/
-    /*color: #ffffff;*/
-    /*font-size: 15px;*/
-/*}*/
-/*.nav_2{*/
-    /*float: none;*/
-/*}*/
-/*.nav_2 li{*/
-    /*border-left: 1px solid #0073b2;*/
-    /*border-right: 1px solid #0073b2;*/
-/*}*/
-/*.nav_2 li a:hover{*/
-    /*background-color: #46bef1;*/
-/*}*/
-/*.nav_2 li a{*/
-    /*border-right:1px solid #009df2;*/
-/*}*/
-/*.nav_1 li a{*/
-    /*margin-top: 13px;*/
-/*}*/
-/*.nav_1 li a:hover{*/
-    /*background-color: transparent;*/
-/*}*/
+.navbar-top{
+    background-color: #004098;
+}
+.navbar-bottom{
+    background-color: #0087d1;
+    border-top:#008dda;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+.alllogo{
+    width: 150px;
+    height: 55px;
+    margin: 5px;
+}
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-nav{
+    float: right;
+}
+.navbar-nav li a{
+    color: #ffffff;
+    font-size: 15px;
+}
+.nav_2{
+    float: none;
+}
+.nav_2 li{
+    border-left: 1px solid #0073b2;
+    border-right: 1px solid #0073b2;
+}
+.nav_2 li a:hover{
+    background-color: #46bef1;
+}
+.nav_2 li a{
+    border-right:1px solid #009df2;
+}
+.nav_1 li a{
+    margin-top: 13px;
+}
+.nav_1 li a:hover{
+    background-color: transparent;
+}
 
 
 /*-----------------------博客----------------------*/
