@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客</title>
+    <title>logo测试版</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/css测试.css" type="text/css" rel="stylesheet">
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
     <script src="lib/html5shiv/html5shiv.js"></script>
@@ -16,33 +16,9 @@
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#one">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse" id="one">
-            <img src="img/LOGO1.png" alt="" class="alllogo">
-            <ul class="nav navbar-nav nav_1">
-                <li class="login1">
-                    <a href="#"><span>登录</span></a>
-                </li>
-                <li class="register1">
-                    <a href="#"><span>注册</span></a>
-                </li>
-            </ul>
 
-        </div>
-    </div>
-</nav>
 <nav class="navbar navbar-bottom" role="navigation">
-    <div class="container">
+    <div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#two">
@@ -51,8 +27,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <img src="img/LOGO1.png" alt="" class="alllogo">
         </div>
         <div class="navbar-collapse collapse" id="two">
+
             <ul class="nav navbar-nav nav_2">
                 <li>
                     <a href="#"><span>&nbsp;先知首页&nbsp;</span></a>
@@ -76,9 +54,18 @@
                     <a href="#"><span>&nbsp;活动中心&nbsp;</span></a>
                 </li>
             </ul>
+            <ul class="nav navbar-nav nav_1">
+                <li class="login1">
+                    <a href="#"><span>登录</span></a>
+                </li>
+                <li class="register1">
+                    <a href="#"><span>注册</span></a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
+
 
 <div class="container">
     <div class="blog_all col-md-12 col-sm-12 col-xs-12">
@@ -113,16 +100,17 @@
                 </div>
 
                 <div class="blog_select">
+                    <form action="">
+                        <div class="blog_circle">
+                            <div class="blog_s">
+                                <input type="text" class="blog_se">
+                                <button type="submit" class="blog_button">搜索</button>
+                            </div>
 
-                    <div class="blog_circle">
-
-                        <div class="blog_s">
-                            <input type="text" class="blog_se">
                         </div>
-
-                    </div>
-
+                    </form>
                 </div>
+
 
                 <div class="blog_content">
                     <div class="blog_every">
@@ -302,7 +290,7 @@
                     </div>
                 </div>
             </div>
-            <!--博文结束-->
+
             <div style="clear: both"></div>
         </div>
         <div class="col-md-3 col-xs-12">
@@ -327,45 +315,7 @@
                 </div>
             </div>
 
-
-            <div class="blog_classify">
-                <!--&lt;!&ndash;丝带&ndash;&gt;-->
-                <!--<div class="wrap">-->
-                <!--<span class="ribbon6" style="color: #ffffff;font-size: 18px">博文分类</span>-->
-                <!--</div>-->
-                <h4>博文分类</h4>
-                <ul style="margin-top: 20px">
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;移动开发</a>
-                    </li>
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-cloud"></span>&nbsp;Web前端</a>
-                    </li>
-                    <hr style="border: 1px dashed #eeeeee;margin-top: 15px;margin-bottom: 15px">
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;编程语言</a>
-                    </li>
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;云计算</a>
-                    </li>
-                    <hr style="border: 1px dashed #eeeeee;margin-top: 15px;margin-bottom: 15px">
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;数据库</a>
-                    </li>
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;互联网</a>
-                    </li>
-                    <hr style="border: 1px dashed #eeeeee;margin-top: 15px;margin-bottom: 15px">
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;互联网</a>
-                    </li>
-                    <li class="col-md-6 col-xs-6">
-                        <a href=""><span class="fa fa-database"></span>&nbsp;互联网</a>
-                    </li>
-                </ul>
-                <div style="clear: both"></div>
-            </div>
-
+            <!--排行-->
             <div class="blog_line">
                 <h4>博文排行</h4>
                 <ul>
@@ -407,5 +357,7 @@
     </div>
     <div style="clear: both"></div>
 </div>
+
+
 </body>
 </html>
