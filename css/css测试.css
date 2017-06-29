@@ -41,60 +41,59 @@ ul {
     list-style-type: none;
 }
 
-
 /*!*----------------------导航---------------------------*!*/
 
-.navbar-bottom{
+.navbar-bottom {
     background-color: #556165;
-    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 }
-.alllogo{
+
+.alllogo {
     width: 150px;
     height: 55px;
     margin: 5px;
     float: left;
 }
-.navbar{
+
+.navbar {
     margin-bottom: 0;
     border-radius: 0;
 }
-.navbar-nav{
+
+.navbar-nav {
     float: right;
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
     color: #ffffff;
     font-size: 15px;
 }
-.nav_2{
+
+.nav_2 {
     float: left;
 
 }
-.nav_2 li a{
+
+.nav_2 li a {
     padding-top: 25px;
     padding-bottom: 20px;
 }
 
-
-.nav_1 li a{
+.nav_1 li a {
     margin-top: 13px;
 }
-.nav_1 li a:hover{
+
+.nav_1 li a:hover {
     background-color: transparent;
 }
+
 /*---------------------------footer----------------------*/
 
-footer{
+footer {
     width: 100%;
     height: 200px;
     background-color: #575757;
 }
-
-
-
-
-
-
-
 
 /*-----------------------博客----------------------*/
 .blog_all {
@@ -112,7 +111,6 @@ footer{
 .blog_lun {
     width: 100%;
     height: 200px;
-
 }
 
 .blog_every {
@@ -156,28 +154,30 @@ footer{
     color: #666666;
     font-size: 14px;
 }
+
 /*博客搜索框*/
-.blog_select{
+.blog_select {
     width: 100%;
     height: 100px;
     background-color: #eeeeee;
-    margin:  0 auto;
+    margin: 0 auto;
     margin-top: 10px;
 }
-.blog_circle{
+
+.blog_circle {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.blog_s{
+.blog_s {
     width: 87%;
     height: 50px;
     margin-top: 25px;
     position: relative;
 }
 
-.blog_se{
+.blog_se {
     width: 100%;
     height: 50px;
     background-color: #ffffff;
@@ -186,19 +186,19 @@ footer{
     padding-left: 10px;
 }
 
-.blog_s::before{
-    display:inline-block;
-    content:"";
-    border-width:25px 25px 25px 25px;
-    border-style:solid;
-    border-color: transparent #eeeeee transparent  transparent;
+.blog_s::before {
+    display: inline-block;
+    content: "";
+    border-width: 25px 25px 25px 25px;
+    border-style: solid;
+    border-color: transparent #eeeeee transparent transparent;
     /* 定位 */
-    position:absolute;
+    position: absolute;
     right: 0;
-    top:0;
+    top: 0;
 }
 
-.blog_button{
+.blog_button {
     width: 70px;
     height: 50px;
     border: 1px solid #fc9a2f;
@@ -211,20 +211,19 @@ footer{
     outline: none;
 }
 
-
-.blog_s::after{
-    display:block;
-    content:"";
-    border-width:25px 25px 25px 25px;
-    border-style:solid;
-    border-color: transparent #fc9a2f transparent  transparent;
+.blog_s::after {
+    display: block;
+    content: "";
+    border-width: 25px 25px 25px 25px;
+    border-style: solid;
+    border-color: transparent #fc9a2f transparent transparent;
     /* 定位 */
-    position:absolute;
+    position: absolute;
     right: -20px;
-    top:0;
+    top: 0;
 }
 
-.blog_button2{
+.blog_button2 {
     width: 200px;
     background-color: #fc6866;
     border: 2px solid #fc6866;
@@ -239,20 +238,20 @@ footer{
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+
 /*.blog_button2:hover {*/
-    /*background-color: #ffffff;*/
-    /*border: 2px solid #fc6866;*/
-    /*color: #fc6866;*/
-    /*transition: 0.5s all;*/
-    /*-webkit-transition: 0.5s all;*/
-    /*-moz-transition: 0.5s all;*/
-    /*-o-transition: 0.5s all;*/
-    /*-ms-transition: 0.5s all;*/
+/*background-color: #ffffff;*/
+/*border: 2px solid #fc6866;*/
+/*color: #fc6866;*/
+/*transition: 0.5s all;*/
+/*-webkit-transition: 0.5s all;*/
+/*-moz-transition: 0.5s all;*/
+/*-o-transition: 0.5s all;*/
+/*-ms-transition: 0.5s all;*/
 /*}*/
 
-
 /*博客右边*/
-.blog_news{
+.blog_news {
     width: 100%;
     padding: 10px;
     height: 350px;
@@ -263,15 +262,16 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
+
 .bn_l img {
     width: 150px;
     height: 150px;
 }
-.blog_f{
+
+.blog_f {
     width: 35px;
     height: 35px;
 }
-
 
 /*排行*/
 .blog_line {
@@ -303,6 +303,7 @@ footer{
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+
 .br_l {
     width: 28px;
     height: 28px;
@@ -312,6 +313,157 @@ footer{
     color: #ffffff;
 }
 
+/*-------------------------视频首页----------------------------*/
+.video_lun {
+    width: 100%;
+    height: 250px;
+}
 
+.video_ser {
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+}
 
+.video_tr {
+    width: 580px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+}
 
+.video_search1 {
+    width: 450px;
+    height: 46px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: transparent;
+    outline: none;
+    margin-top: 12px;
+    position: absolute;
+    left: 15px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.video_button1 {
+    width: 110px;
+    height: 46px;
+    background-color: #fc6866;
+    border: transparent;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.video_button1::after {
+    display: block;
+    content: "";
+    border-width: 12px 15px 12px 15px;
+    border-style: solid;
+    border-color: transparent #fc6866 transparent transparent;
+    /* 定位 */
+    position: absolute;
+    right: 110px;
+    top: 11px;
+}
+
+/*固定导航条*/
+.video_center {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+    border-top: 1px solid palegreen;
+    /*display: none;*/
+}
+
+.video_search2 {
+    width: 600px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.col-3 {
+    position: relative;
+}
+
+.effect-9{
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.effect-9 ~ .focus-border:before,
+.effect-9 ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.effect-9 ~ .focus-border:after {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    transition-delay: 0.6s;
+}
+
+.effect-9 ~ .focus-border i:before,
+.effect-9 ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399FF;
+    transition: 0.2s;
+}
+
+.effect-9 ~ .focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transition-delay: 0.4s;
+}
+
+.effect-9:focus ~ .focus-border:before,
+.effect-9:focus ~ .focus-border:after {
+    width: 100%;
+    transition: 0.2s;
+    transition-delay: 0.6s;
+}
+
+.effect-9:focus ~ .focus-border:after {
+    transition-delay: 0.2s;
+}
+
+.effect-9:focus ~ .focus-border i:before,
+.effect-9:focus ~ .focus-border i:after {
+    height: 100%;
+    transition: 0.2s;
+}
+
+.effect-9:focus ~ .focus-border i:after {
+    transition-delay: 0.4s;
+}
+
+/*--------------*/
