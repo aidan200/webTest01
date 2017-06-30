@@ -23,13 +23,18 @@ window.onscroll = function () {
 function anflisten() {
     var anifTop = document.getElementsByClassName("anifTopLe")[0];
     var s = anifTop.getBoundingClientRect().top;
+    var oinpt = anifTop.getElementsByClassName("anifInput")[0];
+    var iinpt = newfDiv.getElementsByClassName("anifInput")[0];
         if(s<=0){
             if(!ff){
+                console.log(oinpt.value);
+                iinpt.value = oinpt.value;
                 oldFtopf.appendChild(newfDiv);
                 ff = true;
             }
         }else{
             if(ff){
+                oinpt.value = iinpt.value;
                 oldFtopf.removeChild(newfDiv);
                 ff = false;
             }
