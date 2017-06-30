@@ -384,7 +384,7 @@ footer {
 .video_search2 {
     width: 600px;
     margin-left: 15%;
-    margin-top: 30px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -513,7 +513,7 @@ footer {
 #updown {
     position: absolute;
     right: -150px;
-    top: 0;
+    top: 20px;
     outline: none;
     background-color: transparent;
     border: none;
@@ -537,7 +537,16 @@ footer {
     -ms-transition: 0.3s all;
 }
 
-/*1*/
+.video_mine {
+    position: absolute;
+    right: -370px;
+    top: 30px;
+}
+.video_mine span{
+    margin: 20px;
+}
+
+    /*1*/
 .video_more1 {
     width: 100%;
     border-bottom: 1px solid #cccccc;
@@ -667,7 +676,6 @@ footer {
     position: relative;
 }
 
-
 .video_body h4 {
     text-align: center;
     margin-top: 40px;
@@ -687,7 +695,8 @@ footer {
     height: 100px;
     position: absolute;
 }
-.video_body:hover .video_allimg{
+
+.video_body:hover .video_allimg {
     width: 200px;
     height: 100px;
     position: absolute;
@@ -702,7 +711,8 @@ footer {
     bottom: 10px;
     overflow: hidden;
 }
-.oh2{
+
+.oh2 {
     width: 100px;
     height: 100px;
     position: relative;
