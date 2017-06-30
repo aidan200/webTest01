@@ -388,6 +388,8 @@ footer {
     margin-top: 20px;
 }
 
+
+/*input*/
 .col-3 {
     position: relative;
 }
@@ -411,8 +413,8 @@ footer {
     top: 0;
     right: 0;
     width: 0;
-    height: 2px;
-    background-color: #3399FF;
+    height: 5px;
+    background-color: #6f599c;
     transition: 0.2s;
     transition-delay: 0.2s;
 }
@@ -431,9 +433,9 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2px;
+    width: 5px;
     height: 0;
-    background-color: #3399FF;
+    background-color: #6f599c;
     transition: 0.2s;
 }
 
@@ -465,5 +467,35 @@ footer {
 .effect-9:focus ~ .focus-border i:after {
     transition-delay: 0.4s;
 }
+
+/**/
+.video_b{
+    color: #cccccc;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.video_b:hover{
+    color: #6f599c;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.video_search2 .col-3 button{
+    background-color: transparent;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -40px;
+    top: 5px;
+    border: none;
+
+}
+
 
 /*--------------*/
