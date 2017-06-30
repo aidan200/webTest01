@@ -24,6 +24,32 @@
     <!--bootstrap的所有组件都是依赖JQ的-->
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+       $(function (){//搜索框焦点事件
+           $('#zp_index_xxk').on('focus',function (){
+               $(this).css({
+                   "borderColor":"#46BEF2",
+                   "borderWidth":"2"
+               })
+               $(".zp_index_arrow").css({
+                   "borderColor":"#46BEF2",
+                   "border-bottom-width":"2px",
+                   "border-left-width":"2px"
+               })
+           });
+           $('#zp_index_xxk').on('blur',function (){
+               $(this).css({
+                   "borderColor":"#3689B3",
+                   "borderWidth":"1"
+               })
+               $(".zp_index_arrow").css({
+                   "borderColor":"#3689B3",
+                   "border-bottom-width":"1px",
+                   "border-left-width":"1px"
+               })
+           })
+       })
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-top" role="navigation">
@@ -95,22 +121,24 @@
                 <div class="zp_index_cont_left_top">
                         <div class="zp_index_cont_wbk">
                             <form action="">
-                                <input type="text" placeholder="前端开发">
+                                <input id="zp_index_xxk" type="text" placeholder="前端开发">
+                                <div class="zp_index_arrow"></div>
+                                <button class="zp_index_xxk_btn">
+                                    <span class="fa fa-search fa-2x" style="color: #ffffff"></span>
+                                </button>
                             </form>
-                            <div class="">
-                                图标
-                            </div>
+
+
                         </div>
                     <p><span>默认条件:沈阳</span> <a href="">更多搜索条件</a></p>
                 </div>
                 <div class="zp_index_cont_left_zwtj">
-                    <h3><span>职位推荐</span></h3>
-                    <hr>
+                    <h3>职位推荐&nbsp;&nbsp;<span class="fa fa-caret-down"></span></h3>
                 </div>
                 <div class="zp_index_cont_left_zwtj_cont">
                     <ul>
                         <li>
-                            <i><b>企</b></i>
+                            <i><b>民</b></i>
                            <div class="zp_index_cont_left_zwtj_cont_left">
                                <h4>WEB前端研发工程师</h4>
                                <p> <span>面议</span>&nbsp;&nbsp;|&nbsp;&nbsp;沈阳&nbsp;&nbsp;|&nbsp;&nbsp;本科&nbsp;&nbsp;及以上&nbsp;&nbsp;|&nbsp;&nbsp;3年经验</p>
@@ -123,7 +151,7 @@
                             </div>
                         </li>
                         <li>
-                            <i><b>企</b></i>
+                            <i><b>国</b></i>
                             <div class="zp_index_cont_left_zwtj_cont_left">
                                 <h4>WEB前端研发工程师</h4>
                                 <p> <span>面议</span>&nbsp;&nbsp;|&nbsp;&nbsp;沈阳&nbsp;&nbsp;|&nbsp;&nbsp;本科&nbsp;&nbsp;及以上&nbsp;&nbsp;|&nbsp;&nbsp;3年经验</p>
@@ -136,7 +164,7 @@
                             </div>
                         </li>
                         <li>
-                            <i><b>企</b></i>
+                            <i><b>外</b></i>
                             <div class="zp_index_cont_left_zwtj_cont_left">
                                 <h4>WEB前端研发工程师</h4>
                                 <p> <span>面议</span>&nbsp;&nbsp;|&nbsp;&nbsp;沈阳&nbsp;&nbsp;|&nbsp;&nbsp;本科&nbsp;&nbsp;及以上&nbsp;&nbsp;|&nbsp;&nbsp;3年经验</p>
@@ -158,7 +186,7 @@
                 <div class="zp_index_cont_right_top">
                     <div>
                         <div class="zp_index_cont_right_top_left">
-                            <img src="img/zp_index_tx.gif" alt="">
+                            <img src="img/boy.png" alt="" width="100%" height="100%">
                         </div>
                         <div class="zp_index_cont_right_top_right">
                             <span>谁谁谁</span>
@@ -205,7 +233,7 @@
                 </div>
                 <div class="zp_index_cont_right_bottom">
                     <div class="zp_index_cont_right_bottom_top">
-                        <p><span>简历</span></p>
+                        <p>简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历</p>
                         <div>
                             <div class="col-lg-7">
                                 <h4>60%&nbsp;&nbsp;<span>06-29&nbsp;13:07</span></h4>
