@@ -168,3 +168,6 @@ cursor: nw-resize;         左上箭头
 cursor: se-resize;         右下箭头
 cursor: sw-resize;         左下箭头
 cursor: wait               漏斗
+
+
+outline: none;             取消文本获取焦点高亮默认样式
