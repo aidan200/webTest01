@@ -7,13 +7,8 @@ var newfDiv;
 var ff = false;
 $(document).ready(function(){
     var anifTop = document.getElementsByClassName("anifTopLe")[0];
-    oldFtopf = anifTop.parentNode;
-    oldFtopW = oldFtopf.offsetWidth;
-    var ml = $(oldFtopf).css('paddingLeft');
-    var ss = ml.substring(0,ml.indexOf('px'));
     newfDiv = anifTop.cloneNode(true);
     $(newfDiv).addClass('anifTop');
-    $(newfDiv).width(oldFtopW-ss);
 })
 window.onscroll = function () {
     anflisten();
@@ -22,12 +17,18 @@ window.onscroll = function () {
 //滚动后浮动顶部元素
 function anflisten() {
     var anifTop = document.getElementsByClassName("anifTopLe")[0];
+    //计算宽度
+    oldFtopf = anifTop.parentNode;
+    oldFtopW = oldFtopf.offsetWidth;
+    var ml = $(oldFtopf).css('paddingLeft');
+    var ss = ml.substring(0,ml.indexOf('px'));
+    $(newfDiv).width(oldFtopW-ss);
+    //判断是否浮动
     var s = anifTop.getBoundingClientRect().top;
     var oinpt = anifTop.getElementsByClassName("anifInput")[0];
     var iinpt = newfDiv.getElementsByClassName("anifInput")[0];
         if(s<=0){
             if(!ff){
-                console.log(oinpt.value);
                 iinpt.value = oinpt.value;
                 oldFtopf.appendChild(newfDiv);
                 ff = true;
