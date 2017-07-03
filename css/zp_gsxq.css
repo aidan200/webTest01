@@ -45,56 +45,108 @@ ul {
 
 /*----------------------导航---------------------------*/
 
-.navbar-top{
-    background-color: #004098;
+.navbar-bottom {
+    background-color: #556165;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 }
-.navbar-bottom{
-    background-color: #0087d1;
-    border-top:#008dda;
-    box-shadow: 0 2px 4px rgba(0,0,0,.25);
-}
-.alllogo{
+
+.alllogo {
     width: 150px;
     height: 55px;
     margin: 5px;
+    float: left;
 }
-.navbar{
+
+.navbar {
     margin-bottom: 0;
     border-radius: 0;
 }
-.navbar-nav{
+
+.navbar-nav {
     float: right;
 }
-.navbar-nav li a{
+
+.navbar-nav li a {
     color: #ffffff;
     font-size: 15px;
 }
-.nav_2{
-    float: none;
+
+.nav_2 {
+    float: left;
+
 }
-.nav_2 li{
-    border-left: 1px solid #0073b2;
-    border-right: 1px solid #0073b2;
+
+.nav_2 li a {
+    line-height: 25px;
+    margin-top: 10px;
 }
-.nav_2 li a:hover{
-    background-color: #46bef1;
-}
-.nav_2 li a{
-    border-right:1px solid #009df2;
-}
-.nav_1 li a{
+
+.nav_1 li a {
     margin-top: 13px;
 }
-.nav_1 li a:hover {
+
+.nav_2 li a:hover, .nav_1 li a:hover {
     background-color: transparent;
 }
+
+/*新改的导航*/
+
+.button01 {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.button01 a {
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+    display: block;
+}
+
+.button01::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translate(-100%, -600%) rotate(30deg);
+    transform: translate(-100%, -600%) rotate(30deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+
+}
+
+.button01:hover::before {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.sim-button {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
 /*********************************************************************************/
-.zp_gsxq_bg{
-    height: 250px;
+.zp_gsxq_bg {
+    height: 350px;
     width: 100%;
     position: absolute;
     z-index: -1;
-    top: 118px;
+    top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .zp_spxq_cont{
     margin-top: 40px;
