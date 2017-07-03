@@ -14,6 +14,17 @@
 
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+
+            $(".bi_b1 button").click(function(){
+                //获取一个坐标
+                var listItem=$('.bi_b1 button').index(this);
+                //根据坐标找到要操作的div,添加toggle();事件
+                $('.bi_yt').eq(listItem).toggle();
+            });
+        })
+    </script>
 </head>
 <body>
 
@@ -65,12 +76,16 @@
         </div>
     </div>
 </nav>
-<div class="bi_all">
-    <div class="container" style="background-color: transparent">
 
+<div class="bi_all">
+    <div class="container">
+        <div class="bi_top">
+            <h2>鹿晗的博客</h2>
+            <div>嘿有点意思</div>
+        </div>
         <div class="bi_in col-md-12">
             <form action="">
-                <!--右边-->
+                <!--左边-->
                 <div class="bi_left col-md-3">
                     <!--个人信息-->
                     <div class="blogin_news">
@@ -84,12 +99,27 @@
                                 <button class="bi_b"><span class="fa fa-envelope"></span> 发私信</button>
                             </div>
                             <img src="img/scissors.png" alt="" style="width: 100%;">
-                            <div style="text-align: left;padding-left: 40px;padding-right: 40px;margin-top: 20px">
-                                <div>访问: <span>4612</span></div>
-                                <div>积分: <span>451</span></div>
-                                <div>等级: <span>2</span></div>
-                                <div>原创: <span>26</span></div>
-                                <div>转载: <span>560</span></div>
+                            <div class="bi_more">
+                                <div class="bi_more1">
+                                    访问: <span>4612</span>
+                                </div>
+                                <div class="bi_more1">
+                                    积分: <span>4612</span>
+                                </div>
+
+                                <div class="bi_more1">等级:
+                                    <span class="bi_s">BLOG<span class="arrow2"></span><span
+                                            class="bi_s1">6</span></span>
+
+                                </div>
+
+                                <div class="bi_more1">
+                                    <span>原创: <span>26</span></span>
+                                </div>
+
+                                <div class="bi_more1">
+                                    <span>转载: <span>560</span></span>
+                                </div>
                             </div>
 
 
@@ -173,15 +203,23 @@
                     </div>
                 </div>
 
-                <!--左边-->
+                <!--右边-->
                 <div class="bi_right col-md-9">
-
                     <div class="bi_rin">
-                        <div class="bi_rtop"><span></span></div>
+                        <div class="bi_rtop">
+                            <span class="fa fa-lightbulb-o" style="margin-right: 10px;color: #fc6866"> </span>
+                            直播 | 前端开发在线峰会 【直播】探究Linux的总线、设备、驱动模型！
+                        </div>
                         <h3>【Cocos2d-x】开发基础-第一个Cocos2d-x游戏</h3>
-                        <div> 标签：<span>cocos2d-x</span> <span>cocos2d</span> <span>游戏</span></div>
+                        <div class="bi_bb"> 标签：<span>cocos2d-x</span> <span>cocos2d</span> <span>游戏</span></div>
+                        <div class="bi_time">
+                            <span>2017-07-02 16:50</span>
+                            <span class="fa fa-search-plus">114 <span>人阅读</span></span>
+                            <span class="fa fa-comments">评论<span>0</span></span>
+                            <span>收藏</span>
+                        </div>
                         <hr>
-                        <div><span class="fa fa-bars">
+                        <div style="margin-left: 10px"><span class="fa fa-bars">
                     </span>&emsp;分类: &emsp; <span>cocos2d-x（10）</span>
                         </div>
                         <hr>
@@ -236,72 +274,108 @@
 
                         <div class="blogin_a">
                             <div class="blogin_a1">
-                                <button>上一篇</button>
-                                ArcGIS水文分析实战教程（5）细说流向与流量
+                                <a href="">
+                                    <button><span class="fa fa-chevron-up"></span> 上一篇</button>
+                                    ArcGIS水文分析实战教程（5）细说流向与流量</a>
                             </div>
                             <div class="blogin_a2">
-                                <button>下一篇</button>
-                                ArcGIS水文分析实战教程（7）细说流域提取
+                                <a href="">
+                                    <button><span class="fa fa-chevron-down"></span> 下一篇</button>
+                                    ArcGIS水文分析实战教程（7）细说流域提取</a>
                             </div>
                         </div>
                         <div class="blogin_about">
                             <h5>相关文章推荐</h5>
                             <hr>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
-                            <div class="q col-md-6">利用ArcGIS水文分析工具提取河网(转)</div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+                            <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
+
+
+
                         </div>
 
-                        <h3 style="margin-top: 40px">查看评论</h3>
+                        <h3>查看评论</h3>
                         <div class="blog_bottom">
                             <div class="col-md-2">
                                 <img src="img/small.jpg" alt="" class="blogin_img"></div>
                             <div class="col-md-10 bl_in">
-                                <h4>芦苇系联盟</h4>
-                                <div>2017-07-02</div>
+                                <div class="bi_b1">
+                                    <h4>芦苇系联盟</h4>
+                                    <div style="">2017-07-02</div>
+                                    <button type="button">回复</button>
+                                </div>
+                                <div style="clear: both"></div>
                                 <div>如花少年，光影绮丽，清冽歌声，梦幻华丽。蜷川实花大师执导，以大电影拍摄标准，搭配美国制作人Santell与法国电子乐新贵Picard
                                     bros，共同呈现华美梦境，心血挑战音乐审美极限！@M鹿M 请关注鹿晗最新mini数字专辑《Xplore》，QQ音乐，酷我，酷狗均有销售，请支持正版
                                 </div>
+                                <div class="bi_yt">
+                                    <textarea>
+                                    </textarea>
+                                    <button>提交</button>
+                                </div>
                             </div>
                             <div style="clear: both"></div>
+
+                            <hr>
                         </div>
                         <div class="blog_bottom">
                             <div class="col-md-2">
                                 <img src="img/small.jpg" alt="" class="blogin_img"></div>
                             <div class="col-md-10 bl_in">
-                                <h4>芦苇系联盟</h4>
-                                <div>2017-07-02</div>
+                                <div class="bi_b1">
+                                    <h4>芦苇系联盟</h4>
+                                    <div style="">2017-07-02</div>
+                                    <button type="button">回复</button>
+                                </div>
+                                <div style="clear: both"></div>
                                 <div>如花少年，光影绮丽，清冽歌声，梦幻华丽。蜷川实花大师执导，以大电影拍摄标准，搭配美国制作人Santell与法国电子乐新贵Picard
                                     bros，共同呈现华美梦境，心血挑战音乐审美极限！@M鹿M 请关注鹿晗最新mini数字专辑《Xplore》，QQ音乐，酷我，酷狗均有销售，请支持正版
                                 </div>
+                                <div class="bi_yt">
+                                    <textarea>
+                                    </textarea>
+                                    <button>提交</button>
+                                </div>
                             </div>
                             <div style="clear: both"></div>
+
+                            <hr>
                         </div>
                         <div class="blog_bottom">
                             <div class="col-md-2">
                                 <img src="img/small.jpg" alt="" class="blogin_img"></div>
                             <div class="col-md-10 bl_in">
-                                <h4>芦苇系联盟</h4>
-                                <div>2017-07-02</div>
+                                <div class="bi_b1">
+                                    <h4>芦苇系联盟</h4>
+                                    <div style="">2017-07-02</div>
+                                    <button type="button">回复</button>
+                                </div>
+                                <div style="clear: both"></div>
                                 <div>如花少年，光影绮丽，清冽歌声，梦幻华丽。蜷川实花大师执导，以大电影拍摄标准，搭配美国制作人Santell与法国电子乐新贵Picard
                                     bros，共同呈现华美梦境，心血挑战音乐审美极限！@M鹿M 请关注鹿晗最新mini数字专辑《Xplore》，QQ音乐，酷我，酷狗均有销售，请支持正版
                                 </div>
+                                <div class="bi_yt">
+                                    <textarea>
+                                    </textarea>
+                                    <button>提交</button>
+                                </div>
                             </div>
                             <div style="clear: both"></div>
+
+                            <hr>
                         </div>
 
                         <h3>发表评论</h3>
-                        <div>
-                        <textarea style="width: 60%;height: 200px">
-
-                        </textarea>
+                        <div class="bi_bottom">
+                        <textarea></textarea>
                             <button type="submit">提交</button>
                         </div>
                     </div>

@@ -83,7 +83,7 @@ ul {
     margin-top: 13px;
 }
 
-.nav_2 li a:hover,.nav_1 li a:hover  {
+.nav_2 li a:hover, .nav_1 li a:hover {
     background-color: transparent;
 }
 
@@ -97,12 +97,14 @@ ul {
     position: relative;
     overflow: hidden;
 }
-.button01 a{
-    color: rgba(51,51,51,1);
+
+.button01 a {
+    color: rgba(51, 51, 51, 1);
     text-decoration: none;
     display: block;
 }
-.button01::before{
+
+.button01::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -115,22 +117,25 @@ ul {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform: translate(-100%, -600%) rotate(30deg);
-    transform: translate(-100%, -600%)  rotate(30deg);
-    background-color: rgba(255,255,255,0.5);
+    transform: translate(-100%, -600%) rotate(30deg);
+    background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 
 }
-.button01:hover::before{
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0);
+
+.button01:hover::before {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
-.sim-button{
+
+.sim-button {
     display: inline-block;
     line-height: 50px;
     text-align: center;
     cursor: pointer;
 }
+
 /*---------------------------footer----------------------*/
 
 footer {
@@ -323,7 +328,7 @@ footer {
     padding: 15px;
     height: auto;
     border: 1px solid #e5e5e5;
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -352,15 +357,17 @@ footer {
     width: 28px;
     height: 28px;
     display: inline-block;
-    background-color: #fc9a2f;
+    background-color: #fc6866;
     text-align: center;
     color: #ffffff;
+    line-height: 28px;
 }
 
 /*-------------------------视频首页----------------------------*/
-.video_top{
+.video_top {
     position: relative;
 }
+
 .video_lun {
     width: 100%;
     height: 250px;
@@ -592,11 +599,12 @@ footer {
     right: -370px;
     top: 30px;
 }
-.video_mine span{
+
+.video_mine span {
     margin: 20px;
 }
 
-    /*1*/
+/*1*/
 .video_more1 {
     width: 100%;
     border-bottom: 1px solid #cccccc;
@@ -773,7 +781,7 @@ footer {
 .blogin_news {
     width: 100%;
     padding: 10px;
-    height: 450px;
+    height: auto;
     border: 1px solid #e5e5e5;
 }
 
@@ -798,8 +806,17 @@ footer {
     width: 100%;
 }
 
+.bi_top {
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.bi_top h2 {
+    margin-top: 30px;
+}
+
 .bi_in {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .bi_left {
@@ -818,6 +835,48 @@ footer {
     border-radius: 3px;
 }
 
+.bi_more {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+}
+
+.bi_more1 {
+    margin-top: 10px;
+}
+
+.bi_s {
+    display: inline-block;
+    width: 75px;
+    height: 20px;
+    background-color: #fc6866;
+    color: #ffffff;
+    padding-left: 5px;
+    position: relative;
+}
+
+.bi_s1 {
+    position: absolute;
+    right: 5px;
+}
+
+.arrow2 {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-width: 2px 2px 0 0;
+    border-color: #ffffff;
+    border-style: solid;
+    background: linear-gradient(225deg, transparent 50%, transparent 50%);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    right: 20px;
+
+}
+
 .bi_right {
 
 }
@@ -828,12 +887,31 @@ footer {
     border: 1px solid #e5e5e5;
     height: 100%;
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 .bi_rtop {
     width: 100%;
     height: 30px;
-    border: 1px dashed #fc9a2f;
+    border: 1px dashed rgba(10, 202, 179, 0.91);
+    padding-left: 10px;
+    line-height: 30px;
+    color: #fc6866;
+}
+
+.bi_bb {
+    color: #fc6866;
+    margin-left: 10px;
+}
+
+.bi_time {
+    float: right;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.bi_time span {
+    margin-right: 10px;
 }
 
 .blog_con {
@@ -870,30 +948,31 @@ footer {
     margin-top: 30px;
 }
 
-.blogin_a1 button {
-    width: 80px;
-    height: 30px;
-    border: transparent;
-    outline: none;
-    background-color: #fc6866;
-    color: #FFFFFF;
+.blogin_a1 {
+    margin-left: 10px;
 }
 
-.blogin_a2 button {
+.blogin_a2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.blogin_a1 button, .blogin_a2 button {
     width: 80px;
     height: 30px;
     border: transparent;
     outline: none;
     background-color: #fc6866;
     color: #FFFFFF;
-    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .blogin_about {
-    width: 100%;
+    width: 95%;
     height: 240px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #dcdcdc;
     padding: 20px;
+    margin: 10px;
     margin-top: 40px;
 }
 
@@ -904,7 +983,8 @@ footer {
 .blog_bottom {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .bl_in {
@@ -912,6 +992,74 @@ footer {
     padding-left: 20px;
 }
 
+.bi_b1 h4 {
+    display: inline-block;
+    float: left
+}
+
+.bi_b1 div {
+    float: left;
+    font-size: 14px;
+    color: #888;
+    margin: 10px;
+}
+
+.bi_b1 button {
+    float: right;
+    margin-top: 10px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.bi_yt {
+    display: none;
+}
+
+.bi_yt textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+}
+
+.bi_yt button {
+    width: 100px;
+    height: 35px;
+    background-color: rgba(10, 202, 179, 0.91);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.bi_rin h3 {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.bi_bottom textarea{
+    width: 90%;
+    height: 200px;
+    margin-left: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    outline: none;
+}
+.bi_bottom button{
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color: rgba(10, 202, 179, 0.91);
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
 .blogin_img {
     width: 80px;
     height: 80px;
@@ -985,12 +1133,22 @@ footer {
     height: 200px;
     background-color: black;
     overflow: hidden;
-    padding-left: 100px;
+}
+
+.vc_sa {
+    margin-top: 20px;
+    color: #eeeeee;
+
+}
+
+.vc_sa span {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .vc_top h2 {
     color: #FFFFFF;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .vc_top button {
@@ -1006,8 +1164,10 @@ footer {
 
 .vc_t {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
     color: #eeeeee;
+    padding-right: 30px;
+    border-right: 1px solid #eeeeee;
 }
 
 .vc_t span {
@@ -1029,7 +1189,7 @@ footer {
 
 .vc_l ul li {
     width: 80%;
-    height: 40px;
+    /*height: 40px;*/
     background-color: #eeeeee;
     line-height: 40px;
     margin-top: 10px;
@@ -1048,15 +1208,18 @@ footer {
     border-radius: 50px;
     float: left;
 }
-.vi_inpu1{
+
+.vi_inpu1 {
     width: 80%;
     height: 120px;
-    border:1px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
     margin-left: 30px;
 }
-.vi_b1{
+
+.vi_b1 {
     display: inline-block;
-    float: right;margin-right: 100px;
+    float: right;
+    margin-right: 100px;
     margin-top: 30px;
     width: 100px;
     height: 35px;
@@ -1067,7 +1230,7 @@ footer {
     border-radius: 3px;
 }
 
-.vi_name{
+.vi_name {
     display: inline-block;
 }
 
@@ -1111,4 +1274,43 @@ footer {
     color: #ffffff;
 }
 
+/*------------------轮播-----------------------*/
+#div1 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
 
+}
+
+#div1 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#div1 h4 {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 11111111;
+}
+
+#div1 h5 {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
