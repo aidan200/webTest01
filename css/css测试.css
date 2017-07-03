@@ -939,9 +939,9 @@ footer {
 }
 
 .blog_b2 {
-    background-color: #FFFFFF;
+    background-color: rgba(10, 202, 179, 0.91);
     border: 1px solid rgba(10, 202, 179, 0.91);
-    color: rgba(10, 202, 179, 0.91);
+    color: #FFFFFF;
 }
 
 .blogin_a {
@@ -1039,7 +1039,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.bi_bottom textarea{
+.bi_bottom textarea {
     width: 90%;
     height: 200px;
     margin-left: 40px;
@@ -1047,7 +1047,8 @@ footer {
     border-radius: 3px;
     outline: none;
 }
-.bi_bottom button{
+
+.bi_bottom button {
     display: block;
     width: 100px;
     height: 35px;
@@ -1060,6 +1061,7 @@ footer {
     margin-bottom: 20px;
 
 }
+
 .blogin_img {
     width: 80px;
     height: 80px;
@@ -1078,6 +1080,16 @@ footer {
     margin-top: 20px;
 }
 
+.bw_t2 {
+    margin-top: 30px
+}
+
+.bw_t2 h5 {
+    color: #999;
+    margin-top: 30px;
+
+}
+
 .bw_top h4 {
     display: inline-block;
     margin-left: 20px;
@@ -1086,6 +1098,7 @@ footer {
 .bw_head {
     width: 60px;
     height: 60px;
+    float: left;
 }
 
 .bw_s1 {
@@ -1102,6 +1115,7 @@ footer {
     border: 1px solid #CCCCCC;
     outline: none;
     border-radius: 3px;
+    padding-left: 10px;
 }
 
 .bw_text {
@@ -1110,6 +1124,7 @@ footer {
     border: 1px solid #CCCCCC;
     outline: none;
     border-radius: 3px;
+    padding-left: 10px;
 }
 
 .bw_text2 {
@@ -1118,15 +1133,55 @@ footer {
     border: 1px solid #CCCCCC;
     outline: none;
     border-radius: 3px;
+    padding-left: 10px;
 }
 
 .bw_aim {
     width: 100%;
     height: 80px;
     border: 1px solid #CCCCCC;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
+.bw_in2 {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.bw_sb {
+    width: 80px;
+    height: 25px;
+    background-color: #fc9a2f;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.bw_sb2 {
+    width: 80px;
+    height: 35px;
+    background-color: #fc9a2f;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.bw_d{
+    width: 250px;
+    height: 60px;
+    background-color: #eeeeee;
+    margin: 10px;
+    float: right;
+    padding: 10px;
+}
+.bw_classify{
+    display: inline-block;
+    margin-right: 20px;
+}
+.bw_bottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
 /*----------------------视频列表-------------------------*/
 .vc_top {
     width: 100%;

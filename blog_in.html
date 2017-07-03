@@ -25,6 +25,16 @@
             });
         })
     </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".blog_b1").click(function(){
+                $(".blog_b1 span").toggleClass('fa-thumbs-up');
+            });
+            $(".blog_b2").click(function(){
+                $(".blog_b2 span").toggleClass('fa-star');
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -267,9 +277,10 @@
                         </div>
 
                         <div class="blogin_center">
-                            <button class="blog_b1">顶<span style="display: block">1</span>
+                            <button class="blog_b1" type="button"> <span class="fa fa-thumbs-o-up fa-2x"></span>
                             </button>
-                            <button class="blog_b2">踩<span style="display: block">1</span></button>
+                            <button class="blog_b2" type="button"> <span class="fa fa-star-o fa-2x"></span>
+                            </button>
                         </div>
 
                         <div class="blogin_a">
