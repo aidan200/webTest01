@@ -20,9 +20,8 @@ function anflisten() {
     //计算宽度
     oldFtopf = anifTop.parentNode;
     oldFtopW = oldFtopf.offsetWidth;
-    var ml = $(oldFtopf).css('paddingLeft');
-    var ss = ml.substring(0,ml.indexOf('px'));
-    $(newfDiv).width(oldFtopW-ss);
+    var ml = parseInt($(oldFtopf).css('paddingLeft'));
+    $(newfDiv).width(oldFtopW-ml);
     //判断是否浮动
     var s = anifTop.getBoundingClientRect().top;
     var oinpt = anifTop.getElementsByClassName("anifInput")[0];
