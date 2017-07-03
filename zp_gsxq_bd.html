@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--设置当前HTML文件的字符编码-->
+    <meta charset="utf-8">
+    <!--设置浏览器兼容版本 让IE用最新版本渲染网页-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!--声明当前网页在移动端浏览器当中展示的相关设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业登录首页</title>
+    <!--引入bootstrap核心样式表-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/zp_gsxq_bd.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--html5shiv.js的作用：让浏览器可以识别HTML5的新标签-->
+    <!--respond.min.js的作用：让低版本浏览器可以使用css的媒体查询-->
+    <!--如果当前版本小于IE9-->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--自己的文件写在下面-->
+    <!--bootstrap的所有组件都是依赖JQ的-->
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#one">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="one">
+            <img src="img/LOGO1.png" alt="" class="alllogo">
+            <ul class="nav navbar-nav nav_1">
+                <li class="login1">
+                    <a href="#"><span>登录</span></a>
+                </li>
+                <li class="register1">
+                    <a href="#"><span>注册</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-bottom" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#two">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="two">
+            <ul class="nav navbar-nav nav_2">
+                <li>
+                    <a href="#"><span>&nbsp;先知首页&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;先知课程&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;会员中心&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;先知博客&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;招聘中心&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;技术领域&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>&nbsp;活动中心&nbsp;</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container zp_gsxq_bd_cont">
+    <div class="zp_gsxq_bd_js">
+        <h4>职位发布<em class="pull-right"><span>*</span>为必填</em></h4>
+    </div>
+    <div class="zp_gsxq_bd_cont_1" style="border: none">
+        <h2><span class="number">1</span>公司基本信息</h2>
+        <div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司名称：</label>
+                <div class="group-content valid-row relative">
+                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：人力资源总监" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
+                    <span class="addtions text-muted">注：公司名称发布后不可以修改</span>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>行业：</label>
+                <div class="zp_gsxq_hy">
+                    <input type="text" placeholder="请输入或者选择行业">
+                    <em></em>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>领域：</label>
+                <div class="group-content valid-row relative">
+                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：人力资源总监" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
+                    <span class="addtions text-muted">注：公司名称发布后不可以修改</span>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司规模：</label>
+                <div class="zp_gsxq_gm">
+                    <input type="text"><span>到</span><input type="text"><span>人</span>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司地址：</label>
+                <div class="zp_gsxq_dz">
+                    <input type="text" placeholder="请选择省/市/区">
+                    <em></em>
+                    <input type="text" placeholder="请填写街道、楼宇详细地址">
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司待遇：</label>
+                <div class="zp_gsxq_dy">
+                    <label>
+                        <input type="checkbox"> 绩效奖金
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 带薪年假
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 交通补助
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 定期体检
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 年度旅游
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 免费班车
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 管理规范
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 技能培训
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 岗位晋升
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 五险一金
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 生育补贴
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 上市公司
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 形态多样
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 平台广阔
+                    </label>
+                    &nbsp;
+                    <label>
+                        <input type="checkbox"> 文化简单
+                    </label>
+
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司图标：</label>
+                <div class="zp_gsxq_logo">
+                    <p>请您上传一张公司标志图片作为公司展示头像</p>
+                    <div></div>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>企业风采：</label>
+                <div class="zp_gsxq_logo">
+                    <p>企业风采照片</p>
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="zp_gsxq_bd_cont_1">
+        <h2><span class="number">2</span>公司介绍</h2>
+        <div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error">* </span>公司介绍：</label>
+                <div class="zp_gsxq_js">
+                    <textarea></textarea>
+                    <p>注：职位描述中请勿填写涉及歧视的内容，例如：女性优先，只招男士，残疾，乙肝等</p>
+                </div>
+            </div>
+            <div class="control-group clearfix">
+                <label class="group-title"><span class="text-error"></span>产品介绍：</label>
+                <div class="zp_gsxq_cpjs">
+                    <h3>上传产品封面</h3>
+                    <div class="zp_gsxq_cpjs_cont">
+                    </div>
+                    <p>您可以上传最多4张照片</p>
+                    <h4>请输入产品介绍</h4>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zp_gsxq_bd_cont_1 zp_aa">
+        <h2><span class="number">3</span>确认提交</h2>
+        <div>
+            <button type="reset" class="btn btn-large btn-light">重置</button>
+            <button type="submit" class="btn btn-large btn-light" >提交</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+</body>
+</html>
