@@ -15,23 +15,23 @@
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
 
-            $(".bi_b1 button").click(function(){
+            $(".bi_b1 button").click(function () {
                 //获取一个坐标
-                var listItem=$('.bi_b1 button').index(this);
+                var listItem = $('.bi_b1 button').index(this);
                 //根据坐标找到要操作的div,添加toggle();事件
                 $('.bi_yt').eq(listItem).toggle();
             });
         })
     </script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $(".blog_b1").click(function(){
-                $(".blog_b1 span").toggleClass('fa-thumbs-up');
+        $(document).ready(function () {
+            $(".blog_b1").click(function () {
+                $(".blog_b1 span").toggleClass('fa-thumbs-up bi_c');
             });
-            $(".blog_b2").click(function(){
-                $(".blog_b2 span").toggleClass('fa-check-circle');
+            $(".blog_b2").click(function () {
+                $(".blog_b2 span").toggleClass('fa-check-circle bi_c');
             });
         });
     </script>
@@ -224,9 +224,8 @@
                         <div class="bi_bb"> 标签：<span>cocos2d-x</span> <span>cocos2d</span> <span>游戏</span></div>
                         <div class="bi_time">
                             <span>2017-07-02 16:50</span>
-                            <span class="fa fa-search-plus">114 <span>人阅读</span></span>
+                            <span class="fa fa-search-plus">114 <span>人收藏</span></span>
                             <span class="fa fa-comments">评论<span>0</span></span>
-                            <span>收藏</span>
                         </div>
                         <hr>
                         <div style="margin-left: 10px"><span class="fa fa-bars">
@@ -277,10 +276,19 @@
                         </div>
 
                         <div class="blogin_center">
-                            <button class="blog_b1" type="button"> <span class="fa fa-thumbs-o-up fa-2x"></span>
-                            </button>
-                            <button class="blog_b2" type="button"> <span class="fa fa-check fa-2x"></span>
-                            </button>
+                            <div style="float: right">
+                                <button class="blog_b1" type="button"><span class="fa fa-thumbs-o-up"></span>
+                                </button>
+                                <button class="blog_b2" type="button"><span class="fa fa-check"></span>
+                                </button>
+                                <button class="blog_b3" type="button"><span class="fa fa-weibo"></span>
+                                </button>
+                                <button class="blog_b3" type="button"><span class="fa fa-weixin"></span>
+                                </button>
+                                <button class="blog_b3" type="button"><span class="fa fa-qq"></span>
+                                </button>
+                            </div>
+                            <div style="clear: both"></div>
                         </div>
 
                         <div class="blogin_a">
@@ -308,9 +316,7 @@
                             <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
                             <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
                             <div class="q col-md-6"><a href="">利用ArcGIS水文分析工具提取河网(转)</a></div>
-
-
-
+                            <div style="clear: both"></div>
                         </div>
 
                         <h3>查看评论</h3>
@@ -386,7 +392,7 @@
 
                         <h3>发表评论</h3>
                         <div class="bi_bottom">
-                        <textarea></textarea>
+                            <textarea></textarea>
                             <button type="submit">提交</button>
                         </div>
                     </div>
