@@ -5,7 +5,7 @@ $(function (){
     var aaa=$(window).width();
     var bbb=$(window).height();
     $('#btn1').on('click',function (){
-        $('body').append("<div id='div2'></div>");
+        $('body').append("<div id='div2'><div id='div3'></div></div>");
         $('#div2').css({
             "display":"block",
             "width":aaa,
