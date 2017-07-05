@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017/6/1.
- */
 window.onload = function () {
     anlisten();
 }
@@ -13,18 +10,13 @@ window.onscroll = function () {
     var headerTopRange = header.getBoundingClientRect().top;
     var kj = 1-(headerTopRange+headerHeight-navHeight)/headerHeight;
     var bgc = getStyle(nav,"backgroundColor");
-    // var bgc2 = getStyle(nav,"boxshadow");
     var vlu = RGB(bgc);
-    // var vlu2 = RGB(bgc2);
     if(kj>=1){
         nav.style.backgroundColor = "rgba("+vlu+",1)";
-        // nav.style.boxshadow = "0 2px 4px rgba("+vlu2+",1)";
     }else if(kj<=0.2){
         nav.style.backgroundColor = "rgba("+vlu+",0)";
-        // nav.style.boxshadow = "0 2px 4px rgba(0, 0, 0, 0)"
     }else{
         nav.style.backgroundColor = "rgba("+vlu+","+kj+")";
-        // nav.style.boxshadow = "0 2px 4px rgba(0, 0, 0, .25)"
     }
 }
 //获取真实样式
@@ -53,58 +45,58 @@ function RGB(rgb){
 }
 //动画监听
 function  anlisten() {
-    // var lr = document.getElementsByClassName("relrLn");
-    // var du = document.getElementsByClassName("reduLn");
-    // var du2 = document.getElementsByClassName("reduLn2");
-    // var du3 = document.getElementsByClassName("reduLn3");
-    // var du4 = document.getElementsByClassName("reduLn4");
-    // var rl = document.getElementsByClassName("rerlLn");
-    // var ud = document.getElementsByClassName("reudLn");
-    // anGo(lr,'lr');
-    // anGo(rl,'rl');
-    // anGo(du,'du');
-    // anGo(du2,'du2');
-    // anGo(du3,'du3');
-    // anGo(du4,'du4');
-    // anGo(ud,'ud');
+    var lr = document.getElementsByClassName("relrLn");
+    var du = document.getElementsByClassName("reduLn");
+    var du2 = document.getElementsByClassName("reduLn2");
+    var du3 = document.getElementsByClassName("reduLn3");
+    var du4 = document.getElementsByClassName("reduLn4");
+    var rl = document.getElementsByClassName("rerlLn");
+    var ud = document.getElementsByClassName("reudLn");
+    anGo(lr,'lr');
+    anGo(rl,'rl');
+    anGo(du,'du');
+    anGo(du2,'du2');
+    anGo(du3,'du3');
+    anGo(du4,'du4');
+    anGo(ud,'ud');
 }
 //动画类设置
-// function anGo(ans,type) {
-//         // for(var i = 0;i < ans.length; i++){
-//         //     var s = ans[i].getBoundingClientRect().top;
-//         //     /*console.log(typeof ans[i]+"==="+s);
-//         //     console.log(window.screen.availHeight);*/
-//         //     if(s<=window.screen.availHeight){
-//         //         if(type=="lr") {
-//         //             addClass(ans[i], "relrGo");
-//         //         }else if(type=="rl"){
-//         //             addClass(ans[i], "rerlGo");
-//         //         }else if(type=="du"){
-//         //             addClass(ans[i], "reduGo");
-//         //         }else if(type=="ud"){
-//         //             addClass(ans[i], "reudGo");
-//         //         }else if(type=="du2"){
-//         //             addClass(ans[i], "reduGo2");
-//         //         }else if(type=="du3"){
-//         //             addClass(ans[i], "reduGo3");
-//         //         }else if(type=="du4"){
-//         //             addClass(ans[i], "reduGo4");
-//         //         }
-//         //     }
-//         // }
-// }
-// function addClass(el,addClass) {
-//     // var b = true;
-//     // var cs = el.getAttribute("class");
-//     // var css = cs.split(" ");
-//     // for(var i=0;i<css.length;i++){
-//     //     if(css[i]==addClass){
-//     //         b = false;
-//     //     }
-//     // }
-//     // if(b){
-//     //     cs += " " +addClass;
-//     // }
-//     // el.setAttribute("class",cs);
-// }
+function anGo(ans,type) {
+    for(var i = 0;i < ans.length; i++){
+        var s = ans[i].getBoundingClientRect().top;
+        /*console.log(typeof ans[i]+"==="+s);
+         console.log(window.screen.availHeight);*/
+        if(s<=window.screen.availHeight){
+            if(type=="lr") {
+                addClass(ans[i], "relrGo");
+            }else if(type=="rl"){
+                addClass(ans[i], "rerlGo");
+            }else if(type=="du"){
+                addClass(ans[i], "reduGo");
+            }else if(type=="ud"){
+                addClass(ans[i], "reudGo");
+            }else if(type=="du2"){
+                addClass(ans[i], "reduGo2");
+            }else if(type=="du3"){
+                addClass(ans[i], "reduGo3");
+            }else if(type=="du4"){
+                addClass(ans[i], "reduGo4");
+            }
+        }
+    }
+}
+function addClass(el,addClass) {
+    var b = true;
+    var cs = el.getAttribute("class");
+    var css = cs.split(" ");
+    for(var i=0;i<css.length;i++){
+        if(css[i]==addClass){
+            b = false;
+        }
+    }
+    if(b){
+        cs += " " +addClass;
+    }
+    el.setAttribute("class",cs);
+}
 
