@@ -105,5 +105,4 @@ $(function (){
         var dd = document.getElementById("mybtn"+btnId);
         console.log(dd);
         
-
     }
