@@ -66,7 +66,7 @@ $(function (){
             "width":"700",
             "height":"300"
         })
-    })
+    });
     $('.zp_gsxq_bd_tck_bottom > a').on("click",function (){
         var a=$('.zp_gsxq_bd_tck_cont2_cont select').eq(0).find("option:selected").text();
         var b=$('.zp_gsxq_bd_tck_cont2_cont select').eq(1).find("option:selected").text();
@@ -79,5 +79,31 @@ $(function (){
             "width":"0",
             "height":"0"
         })
-    })
+    });
+//   添加公司产品开始
+    var btnId = 0;
+    $('.zp_gsxq_cpjs_div1').on("click",function (){
+        btnId++;
+        $(this).before('<div class="zp_gsxq_cpjs_cp"><div class="zp_gsxq_cpjs_cp_left"><h3></h3><div onclick="aaa('+btnId+')" class="zp_gsxq_ttbg"></div><input id="mybtn'+btnId+'" name="file" class="zp_gsxq_cp_file" type="file" style="display: none"></div><div class="zp_gsxq_cpjs_cp_right"><input type="text" placeholder="请输入产品名称">   <textarea>请输入产品信息</textarea></div> <div style="clear:both"></div><span>X</span></div>')
+        //   产品关闭按钮
+        $('.zp_gsxq_cpjs_cp >  span').on("click",function (){
+            $(this).parent().remove();//自杀
+        });
+        function aaa (btnId) {
+            alert(btnId);
+        }
+        //图片功能开始
+        $('#tttbg'+btnId).on("click",aa(btnId));
+        function aa(ac) {
+            console.log(ac);
+            return aaa;
+        }
+    });
 });
+    function aaa (btnId) {
+        alert(btnId);
+        var dd = document.getElementById("mybtn"+btnId);
+        console.log(dd);
+        
+
+    }
