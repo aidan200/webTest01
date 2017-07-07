@@ -45,8 +45,8 @@ ul {
 
 /*----------------------导航---------------------------*/
 .navbar-bottom {
-    background-color: #556165;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    background-color: rgb(85, 97, 101);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, .25);*/
 }
 
 .alllogo {
@@ -70,10 +70,48 @@ ul {
     font-size: 15px;
 }
 
+/*.navbar-nav li a:hover {*/
+/*color: transparent;*/
+/*}*/
+
 .nav_2 {
     float: left;
 
 }
+
+/**/
+.nav_2 a {
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.nav_2 a span {
+    display: inline-block;
+    position: relative;
+    transition: transform 300ms;
+    -webkit-transition: -webkit-transform 300ms;
+    -moz-transition: transform 300ms;
+
+}
+
+.nav_2 a span:after {
+    content: attr(data-hover);
+    position: absolute;
+    top: -40px;
+    left: 5px;
+    transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.nav_2 a:hover span,
+.nav_2 a:focus span {
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+}
+
+/**/
 
 .nav_2 li a {
     line-height: 25px;
@@ -82,10 +120,6 @@ ul {
 
 .nav_1 li a {
     margin-top: 13px;
-}
-
-.nav_2 li a:hover, .nav_1 li a:hover {
-    background-color: transparent;
 }
 
 /*新改的导航*/
@@ -294,7 +328,7 @@ ul,li{
 }
 
 
-.zp_index_cont_left_zwtj_cont li > div h4{
+.zp_index_cont_left_zwtj_cont li > div h4 > a{
     color: #3DA8DA;
 }
 .zp_index_cont_left_zwtj_cont_left > p > span{
