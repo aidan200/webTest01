@@ -231,25 +231,7 @@ ul,li{
     border: 1px solid #CDCDCD;
 
 }
-.zp_jianli_yy_left{
-    font-size: 12px;
-    height: 100%;
-    width: 100px;
-    float: left;
-    text-align: center;
-    line-height: 30px;
-    background: #FFFFFF;
-}
-.zp_jianli_yy_right {
-    height: 100%;
-    width: 30px;
-    float: left;
-    background-image: url('../img/zp_jianli_img1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .zp_jianli_cont_left_top2{
-    height: 140px;
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     padding: 20px;
@@ -260,17 +242,20 @@ ul,li{
     width: 100px;
     background: url('../img/boy.png');
     background-size: cover;
-    height: 100%;
+    height: 98px;
     margin-right: 10px;
     z-index: 11111;
 }
-.zp_jianli_cont_left_top2 > p{
+.zp_jianli_cont_left_top2_top{
+
+}
+.zp_jianli_cont_left_top2_top > p{
     margin-bottom: 0;
     height: 26px;
     line-height: 26px;
     font-size: 12px;
 }
-.zp_jianli_cont_left_top2 > h3{
+.zp_jianli_cont_left_top2_top > h3{
     margin: 0;
     margin-bottom: 20px;
 }
@@ -650,4 +635,288 @@ ul,li{
 }
 .zp_index_cont_right_bottom_bottom > div{
     height: 34px;
+}
+
+/*个人修改信息部分开始了   1*/
+.zp_jianli_zl_1 {
+    display: none;
+    width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    padding: 20px;
+    padding-left: 150px;
+    position: relative;
+}
+.zp_jianli_zl_1 > .zp_jianli_zl_1_left{
+    position: absolute;
+    left: 20px;
+}
+.zp_jianli_zl_1_left > div {
+    width: 102px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.zp_jianli_zl_1_left > img{
+    border: 1px solid #CCCCCC;
+}
+.zp_jianli_zl_1_left > div > a{
+    color: #0077B3;
+   margin: 0 7px;
+}
+.zp_jianli_zl_1 > .zp_jianli_zl_1_right{
+
+    width: 100%;
+    height: 100%;
+}
+.zp_jianli_zl_1_right > ul{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.zp_jianli_zl_1_right > ul > li{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+.zp_jianli_zl_1_right > ul > li>.zp_jianli_input1{
+   display: inline-block;
+    width: 150px;
+    height: 100%;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.zp_jianli_zl_1_right > ul > li> input[type='radio']{
+    position: relative;
+    top: 2px;
+    margin: 0 5px;
+}
+.zp_jianli_input2{
+    width: 360px;
+    display: inline-block;
+    height: 100%;
+    float: right;
+    border-radius: 3px;
+}
+.zp_jianli_input3{
+    width: 130px;
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+
+}
+.zp_jianli_zl_1_right > button{
+    padding: 5px 35px;
+}
+/*个人修改信息部分开始了   2*/
+.zp_jianli_zl_2{
+    width: 600px;
+    margin: 0 auto;
+    display: none;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    position: relative;
+    padding: 20px 40px  20px;
+}
+.zp_jianli_zl_2 > .pull-left,.pull-right{
+    width: 50%;
+
+}
+.zp_jianli_zl_2 > .pull-left ul{
+    width: 90%;
+    height: 100%;
+}
+.zp_jianli_zl_2 > .pull-left li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.zp_jianli_zl_2 > .pull-left li >select{
+    display: inline-block;
+    width: 170px;
+    height: 100%;
+    float: right;
+    border-radius: 3px;
+}
+.zp_jianli_zl_2_input1 {
+    display: inline-block;
+    width: 170px;
+    float: right;
+    height: 100%;
+    border-radius: 3px;
+    background: #F5F5F5;
+
+}
+.zp_jianli_zl_2  span{
+    margin-left: 26px;
+}
+
+.zp_jianli_zl_2 > .zp_jianli_zl_2_bottom{
+
+}
+.zp_jianli_zl_2 > .pull-right ul{
+    width: 90%;
+    height: 100%;
+
+}
+.zp_jianli_zl_2 > .pull-right li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.zp_jianli_zl_2 > .pull-right li >select{
+    display: inline-block;
+    width: 170px;
+    height: 100%;
+    float: right;
+    border-radius: 3px;
+}
+.zp_jianli_zl_2_bottom{
+    text-align: center;
+}
+.zp_jianli_zl_2_bottom > button{
+    padding: 5px 35px;
+    margin: 0 auto;
+
+}
+/*个人修改信息部分开始了   3职业意向*/
+.zp_jianli_zl_3{
+    width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    position: relative;
+    padding: 20px 0;
+    display: none;
+
+}
+.zp_jianli_zl_3 > ul{
+
+    width: 100%;
+    padding: 0 60px  0 30px;
+    margin-bottom: 20px;
+}
+.zp_jianli_zl_3 > ul > li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    line-height: 30px;
+}
+.zp_jianli_zl_3 em {
+    background: url('../img/zp_gsxq_hy_k.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zp_jianli_zl_3_input1{
+    display: inline-block;
+    height: 100%;
+    float: right;
+    border-radius: 3px;
+    width: 434px;
+}
+.zp_jianli_zl_3_input2{
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    width: 120px;
+    margin-left: 14px;
+
+}
+.zp_jianli_zl_3_input3{
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    width: 50px;
+
+}
+/*个人修改信息部分开始了   4工作经历*/
+.zp_jianli_zl_4{
+    width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    position: relative;
+    padding: 20px 0;
+    display: none;
+
+
+}
+.zp_jianli_zl_4 > ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.zp_jianli_zl_4 > ul > li {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+
+    padding: 0 40px;
+    line-height: 30px;
+}
+.zp_jianli_zl_4_div1{
+    width: 434px;
+
+    float: right;
+
+}
+.zp_jianli_zl_4_input2{
+    width: 180px;
+    border-radius: 3px;
+    height: 30px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 30px;
+}
+.zp_jianli_zl_4_input3{
+    width: 150px;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+
+}
+.zp_jianli_zl_4_div2{
+    width: 434px;
+    float: right;
+    height: 30px;
+
+}
+.zp_jianli_zl_4_div2 > select{
+    width: 95px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.zp_jianli_zl_4 > div{
+    padding: 0 40px;
+    margin-bottom: 20px;
+
+}
+.zp_jianli_zl_4 >div> span{
+    float: left;
+
+}
+.zp_jianli_zl_4 >div> textarea {
+    display: inline-block;
+    width: 434px;
+    height: 130px;
+    padding: 10px;
+    float: right;
 }
