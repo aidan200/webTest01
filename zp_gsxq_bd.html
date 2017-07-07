@@ -91,8 +91,8 @@
             <div class="control-group clearfix">
                 <label class="group-title"><span class="text-error">* </span>公司名称：</label>
                 <div class="group-content valid-row relative">
-                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：人力资源总监" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
-                    <span class="addtions text-muted">注：公司名称发布后不可以修改</span>
+                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：沈阳先知蓝创有限公司" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
+                    <span class="addtions text-muted">注：名称发布后不可以修改</span>
                 </div>
             </div>
             <div class="control-group clearfix">
@@ -105,7 +105,7 @@
             <div class="control-group clearfix">
                 <label class="group-title"><span class="text-error">* </span>领域：</label>
                 <div class="group-content valid-row relative">
-                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：人力资源总监" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
+                    <input class="text" size="60" type="text" name="ejob_title" maxlength="70" placeholder="如：大数据" validate-title="职位名称" validate-rules="[['required','请填写$'],['reallength',{'max':140},'$1长度不能大于70个字'],['repeat',{'max':5},'请准确填写您的$1信息'],['not',{'type':['email','mobile']},'请勿在$里填写手机号码、QQ、MSN等联系方式']]" value=""><ul data-selector="ejob-list" class="ejob-list" style="display: none;"></ul>
                     <span class="addtions text-muted">注：公司名称发布后不可以修改</span>
                 </div>
             </div>
@@ -190,16 +190,17 @@
             </div>
             <div class="control-group clearfix">
                 <label class="group-title"><span class="text-error">* </span>公司图标：</label>
-                <div class="zp_gsxq_logo">
+                <div class="zp_gsxq_logo gstb">
                     <p>请您上传一张公司标志图片作为公司展示头像</p>
-                    <div></div>
+                    <div id="zp_gsxq_bd_logo"></div>
+                    <input  type="file" style="display:none;">
                 </div>
             </div>
             <div class="control-group clearfix">
                 <label class="group-title"><span class="text-error">* </span>企业风采：</label>
-                <div class="zp_gsxq_logo">
+                <div class="qyfc">
                     <p>企业风采照片</p>
-                    <div></div>
+                    <h4>添加公司风采图片</h4>
                 </div>
             </div>
 
@@ -218,21 +219,6 @@
             <div class="control-group clearfix">
                 <label class="group-title"><span class="text-error"></span>产品介绍：</label>
                 <div class="zp_gsxq_cpjs">
-
-                    <div class="zp_gsxq_cpjs_cp">
-                        <div class="zp_gsxq_cpjs_cp_left">
-                            <h3>请上传一张产品图片</h3>
-                            <div class="zp_gsxq_ttbg">
-                                <input class="zp_gsxq_cp_file" type="file" style="display: none">
-                            </div>
-                        </div>
-                        <div class="zp_gsxq_cpjs_cp_right">
-                            <input type="text" placeholder="请输入产品名称">
-                            <textarea>请输入产品信息</textarea>
-                        </div>
-                        <div style="clear:both"></div>
-                        <span>X</span>
-                    </div>
                     <div class="zp_gsxq_cpjs_div1">
                         添加公司产品
                     </div>
