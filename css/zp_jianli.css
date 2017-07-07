@@ -639,10 +639,9 @@ ul,li{
 
 /*个人修改信息部分开始了   1*/
 .zp_jianli_zl_1 {
+    display: none;
     width: 600px;
     margin: 0 auto;
-
-
     background: #ffffff;
     border: 1px solid #3D9CCC;
     border-top: 5px solid #3D9CCC;
@@ -718,7 +717,7 @@ ul,li{
 .zp_jianli_zl_2{
     width: 600px;
     margin: 0 auto;
-
+    display: none;
     background: #ffffff;
     border: 1px solid #3D9CCC;
     border-top: 5px solid #3D9CCC;
@@ -787,4 +786,137 @@ ul,li{
     padding: 5px 35px;
     margin: 0 auto;
 
+}
+/*个人修改信息部分开始了   3职业意向*/
+.zp_jianli_zl_3{
+    width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    position: relative;
+    padding: 20px 0;
+    display: none;
+
+}
+.zp_jianli_zl_3 > ul{
+
+    width: 100%;
+    padding: 0 60px  0 30px;
+    margin-bottom: 20px;
+}
+.zp_jianli_zl_3 > ul > li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    line-height: 30px;
+}
+.zp_jianli_zl_3 em {
+    background: url('../img/zp_gsxq_hy_k.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zp_jianli_zl_3_input1{
+    display: inline-block;
+    height: 100%;
+    float: right;
+    border-radius: 3px;
+    width: 434px;
+}
+.zp_jianli_zl_3_input2{
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    width: 120px;
+    margin-left: 14px;
+
+}
+.zp_jianli_zl_3_input3{
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    width: 50px;
+
+}
+/*个人修改信息部分开始了   4工作经历*/
+.zp_jianli_zl_4{
+    width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #3D9CCC;
+    border-top: 5px solid #3D9CCC;
+    position: relative;
+    padding: 20px 0;
+    display: none;
+
+
+}
+.zp_jianli_zl_4 > ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.zp_jianli_zl_4 > ul > li {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+
+    padding: 0 40px;
+    line-height: 30px;
+}
+.zp_jianli_zl_4_div1{
+    width: 434px;
+
+    float: right;
+
+}
+.zp_jianli_zl_4_input2{
+    width: 180px;
+    border-radius: 3px;
+    height: 30px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 30px;
+}
+.zp_jianli_zl_4_input3{
+    width: 150px;
+    border-radius: 3px;
+    display: inline-block;
+    float: right;
+
+}
+.zp_jianli_zl_4_div2{
+    width: 434px;
+    float: right;
+    height: 30px;
+
+}
+.zp_jianli_zl_4_div2 > select{
+    width: 95px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.zp_jianli_zl_4 > div{
+    padding: 0 40px;
+    margin-bottom: 20px;
+
+}
+.zp_jianli_zl_4 >div> span{
+    float: left;
+
+}
+.zp_jianli_zl_4 >div> textarea {
+    display: inline-block;
+    width: 434px;
+    height: 130px;
+    padding: 10px;
+    float: right;
 }
