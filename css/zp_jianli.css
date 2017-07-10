@@ -673,7 +673,7 @@ ul,li{
 
 /*个人修改信息部分开始了   1*/
 .zp_jianli_zl_1 {
-    display: none;
+    display: block;
     width: 600px;
     margin: 0 auto;
     background: #ffffff;
@@ -751,7 +751,7 @@ ul,li{
 .zp_jianli_zl_2{
     width: 600px;
     margin: 0 auto;
-    display: none;
+    display: block;
     background: #ffffff;
     border: 1px solid #3D9CCC;
     border-top: 5px solid #3D9CCC;
@@ -830,7 +830,7 @@ ul,li{
     border-top: 5px solid #3D9CCC;
     position: relative;
     padding: 20px 0;
-    display: none;
+    display: block;
 
 }
 .zp_jianli_zl_3 > ul{
@@ -888,7 +888,7 @@ ul,li{
     border-top: 5px solid #3D9CCC;
     position: relative;
     padding: 20px 0;
-    display: none;
+    display: block;
 
 
 }
