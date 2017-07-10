@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />-->
     <title>首页</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/css测试.css" type="text/css" rel="stylesheet">
@@ -27,8 +28,7 @@
     <!--导航透明度-->
     <script src="js/script.js"></script>
 
-    <!---->
-    <script src="js/la.js"></script>
+
 </head>
 <body>
 
@@ -89,7 +89,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         <div class="index_top">
             <h1>大数据上云最佳实现</h1>
             <p>一站式等保合规解决方案，限时优惠</p>
-            <a href="#" class="btn btn-4">查看详情</a>
+            <a href="#" class="btn2 btn-4">查看详情</a>
         </div>
         <div class="items__inner" id="js-scene">
 
@@ -129,7 +129,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         <div class="index_top">
             <h1>阿里云快照商业化</h1>
             <p>让业务数据更安全</p>
-            <a href="#" class="btn btn-4">查看详情</a>
+            <a href="#" class="btn2 btn-4">查看详情</a>
         </div>
         <div class="items__inner" id="js-scene2">
 
@@ -169,7 +169,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         <div class="index_top">
             <h1>物联网套件正式商业化</h1>
             <p>端云一体化方案助企业快速搭建物联网平台</p>
-            <a href="#" class="btn btn-4">查看详情</a>
+            <a href="#" class="btn2 btn-4">查看详情</a>
         </div>
         <div class="items__inner" id="js-scene3">
 
@@ -465,42 +465,6 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
             </a>
         </div>
     </div>
-    <!--<div class="index_04">-->
-        <!--<h3>大咖云集，知识分享的开发者技术社区</h3>-->
-        <!--<p>实战干货、在线直播、专家问答、技术论坛、学习、成长、分享、共建</p>-->
-        <!--<div class="index_041">-->
-            <!--<div class="col-md-4">-->
-                <!--<a href="">-->
-                    <!--<div class="speak_in">-->
-                        <!--<div class="speak_f">-->
-                            <!--<img src="img/7.png" alt="" style="width: 100%;" class="speak_img"></div>-->
-                        <!--<div class="speak_t">SQL Server疑难杂症解决之道</div>-->
-                    <!--</div>-->
-                <!--</a>-->
-            <!--</div>-->
-
-            <!--<div class="col-md-4">-->
-                <!--<a href="">-->
-                    <!--<div class="speak_in">-->
-                        <!--<div class="speak_f">-->
-                            <!--<img src="img/7.png" alt="" style="width: 100%;" class="speak_img"></div>-->
-                        <!--<div class="speak_t">SQL Server疑难杂症解决之道</div>-->
-                    <!--</div>-->
-                <!--</a>-->
-            <!--</div>-->
-
-            <!--<div class="col-md-4">-->
-                <!--<a href="">-->
-                    <!--<div class="speak_in">-->
-                        <!--<div class="speak_f">-->
-                            <!--<img src="img/7.png" alt="" style="width: 100%;" class="speak_img"></div>-->
-                        <!--<div class="speak_t">SQL Server疑难杂症解决之道</div>-->
-                    <!--</div>-->
-                <!--</a>-->
-            <!--</div>-->
-
-        <!--</div>-->
-    <!--</div>-->
 
     <!--生态圈-->
     <div class="index_05">
@@ -557,9 +521,32 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
 
 </div>
 
+<div>
+    <img src="img/df.png" alt="" id="goTopBtn">
+</div>
+
 <footer>
 
 </footer>
+<script type="text/javascript">
+    $(window).scroll(function () {
+        var sc = $(window).scrollTop();
+//        var rwidth = $(window).width()
+        if (sc > 0) {
+            $("#goTopBtn").css("display", "block");
+
+//            $("#goTopBtn").css("left", (rwidth - 36) + "px")
+        } else {
+            $("#goTopBtn").css("display", "none");
+
+
+        }
+    })
+    $("#goTopBtn").click(function () {
+        var sc = $(window).scrollTop();
+        $('body,html').animate({scrollTop: 0}, 500);
+    })
+</script>
 <!--轮播里的小东西-->
 <script src="js/haha.js"></script>
 <script>
@@ -578,7 +565,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
 <!--风琴-->
 <script src="js/anime.min.js"></script>
 <script src="js/main.js"></script>
-<!--lubo-->
+<!--轮播里的-->
 <script>
     (function () {
         [].slice.call(document.querySelectorAll('.grid--effect-rigel > .grid__item')).forEach(function (stackEl) {
@@ -586,6 +573,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         });
     })();
 </script>
+
 
 </body>
 </html>
