@@ -361,7 +361,7 @@ ul,li{
     margin: 0;
     padding-left: 35px;
     padding-right: 178px;
-   margin-bottom: 5px;
+    margin-bottom: 5px;
     height: 20px;
 }
 .zp_jianli_cont_left_jbzl_sjh > div{
@@ -698,7 +698,7 @@ ul,li{
 }
 .zp_jianli_zl_1_left > div > a{
     color: #0077B3;
-   margin: 0 7px;
+    margin: 0 7px;
 }
 .zp_jianli_zl_1 > .zp_jianli_zl_1_right{
 
@@ -719,7 +719,7 @@ ul,li{
     position: relative;
 }
 .zp_jianli_zl_1_right > ul > li>.zp_jianli_input1{
-   display: inline-block;
+    display: inline-block;
     width: 150px;
     height: 100%;
     border-radius: 3px;
