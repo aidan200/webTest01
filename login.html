@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>登录</title>
     <link href="css/css测试.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
 </head>
 <body background="img/scsc.jpg" class="login_body">
 
@@ -25,10 +26,15 @@
                     <span class="focus-border"></span>
                 </div>
 
-                <span class="login_remember">
+                <div class="login_err"><span class="fa fa-exclamation-triangle">&nbsp;</span>错误信息</div>
+
+                <div style="margin-top: 15px;">
+                    <a class="login_forget" href="###">忘记密码?</a>
+                    <span class="login_remember">
                         <input type="checkbox" name="remember" value="true"> 记住我
                     </span>
-                <a class="login_forget" href="###">忘记密码?</a>
+
+                </div>
                 <button type="submit" class="login_button">登 录</button>
                 <a href="###" class="login_re">没有账号？ 立即注册</a>
             </div>

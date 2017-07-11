@@ -524,8 +524,9 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
 
 </div>
 
-<div>
-    <img src="img/df.png" alt="" id="goTopBtn">
+<div id="index_bb">
+    <img src="img/dfdf.png" alt="" id="goTopBtn">
+    <a href="###"><img src="img/ghh.png" alt="" class="index_gh"></a>
 </div>
 
 <footer>
@@ -535,12 +536,12 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
     $(window).scroll(function () {
         var sc = $(window).scrollTop();
 //        var rwidth = $(window).width()
-        if (sc > 0) {
-            $("#goTopBtn").css("display", "block");
+        if (sc > 300) {
+            $("#index_bb").css("display", "block");
 
 //            $("#goTopBtn").css("left", (rwidth - 36) + "px")
         } else {
-            $("#goTopBtn").css("display", "none");
+            $("#index_bb").css("display", "none");
 
 
         }
