@@ -2208,6 +2208,7 @@ footer {
 /*---------------------登录---------------------------*/
 .login_body {
     width: 100%;
+    min-width: 1400px;
     height: 100%;
     background-size: cover;
 
