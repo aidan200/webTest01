@@ -111,9 +111,10 @@ ul {
 }
 
 /**/
-.nav_2 li{
+.nav_2 li {
     float: left;
 }
+
 .nav_2 li a {
     line-height: 25px;
     margin-top: 10px;
@@ -1818,7 +1819,8 @@ footer {
     width: 1000px;
     margin: 0 auto;
 }
-.plan_a{
+
+.plan_a {
     width: 480px;
     float: left;
     margin: 5px;
@@ -2226,6 +2228,7 @@ footer {
     width: 400px;
     height: 500px;
     background-color: #ffffff;
+    border-radius: 3px;
     float: right;
     margin-top: 170px;
     margin-right: 200px;
