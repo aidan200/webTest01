@@ -8,6 +8,7 @@
     <title>首页</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/css测试.css" type="text/css" rel="stylesheet">
+    <!--<link href="css/媒体查询.css" type="text/css" rel="stylesheet">-->
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
     <script src="lib/html5shiv/html5shiv.js"></script>
@@ -19,7 +20,7 @@
     <!--轮播-->
     <script src="lib/jquery/jquery.color.js"></script>
     <script src="js/index_lunbo.js"></script>
-
+    <!--<script src="js/hehe.js"></script>-->
     <script>
         $(function () {
             m_lo1("#home_1")
@@ -35,36 +36,27 @@
 <!--导航-->
 <nav class="navbar navbar-bottom" role="navigation" style="position: fixed;
 z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
-    <div>
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#two">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    <div id="two">
+        <div style="min-width:1200px">
             <img src="img/LOGO1.png" alt="" class="alllogo">
-        </div>
-        <div class="navbar-collapse collapse" id="two">
             <ul class="nav navbar-nav nav_2">
                 <li>
                     <a href="index.html" class="sim-button button01"><span data-hover="先知首页">&nbsp;先知首页&nbsp;</span></a>
                 </li>
                 <li>
-                    <a href="video_home.html" class="sim-button button01"><span data-hover="在线直播">&nbsp;在线直播&nbsp;</span></a>
+                    <a href="video_home.html" class="sim-button button01"><span
+                            data-hover="在线直播">&nbsp;在线直播&nbsp;</span></a>
                 </li>
                 <li>
                     <a href="#" class="sim-button button01"><span data-hover="会员中心">&nbsp;会员中心&nbsp;</span></a>
                 </li>
                 <li>
-                    <a href="blog_home.html" class="sim-button button01"><span data-hover="先知社区">&nbsp;先知社区&nbsp;</span></a>
+                    <a href="blog_home.html" class="sim-button button01"><span
+                            data-hover="先知社区">&nbsp;先知社区&nbsp;</span></a>
                 </li>
                 <li>
-                    <a href="zp_index.html" class="sim-button button01"><span data-hover="招聘中心">&nbsp;招聘中心&nbsp;</span></a>
-                </li>
-                <li>
-                    <a href="#" class="sim-button button01"><span data-hover="技术领域">&nbsp;技术领域&nbsp;</span></a>
+                    <a href="zp_index.html" class="sim-button button01"><span
+                            data-hover="招聘中心">&nbsp;招聘中心&nbsp;</span></a>
                 </li>
                 <li>
                     <a href="#" class="sim-button button01"><span data-hover="活动中心">&nbsp;活动中心&nbsp;</span></a>
@@ -122,7 +114,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
                     <img src="img/05.png" alt="">
                 </div>
             </div>
-
+        </div>
         </div>
     </div>
     <div style="background-image:url('img/19.jpg')">
@@ -215,61 +207,66 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         <p>全球领先、安全、稳定的云计算产品,计算储存网络安全大数据人工智能惠普科技助你飞跃发展</p>
 
         <div class="index_plan">
-            <div class="col-md-6">
+            <div class="plan_a">
                 <div class="plan_in">
-                    <div class="plan_c col-md-6">
+                    <div class="plan_c">
                         <h4>入门型</h4>
+                        <span class="plan_d">
                         <p>适用个人网站初始阶段并发访问量小
                             开发、测试环境
                             代码存储服务器</p>
+                        </span>
                     </div>
-                    <div class="col-md-6">
-                        <img src="img/1111.png" alt="" style="width:90px;height: 100px;margin-top: 10px">
+                    <div class="plan_a2">
+                        <img src="img/1111.png" alt="" class="plan_img">
                         <div><a href="" style="color: #2a68c5">查看详情</a></div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="plan_a">
                 <div class="plan_in">
-                    <div class="plan_c col-md-6">
+                    <div class="plan_c">
                         <h4>基础型</h4>
+                        <span class="plan_d">
                         <p>流量适中的网站应用
                             简单开发环境
-                            代码存储库</p>
+                            代码存储库</p></span>
                     </div>
-                    <div class="col-md-6">
-                        <img src="img/1111.png" alt="" style="width:90px;height: 100px;margin-top: 10px">
+                    <div class="plan_a2">
+                        <img src="img/1111.png" alt="" class="plan_img">
                         <div><a href="" style="color: #0073b2">查看详情</a></div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="plan_a">
                 <div class="plan_in">
-                    <div class="plan_c col-md-6">
+                    <div class="plan_c">
                         <h4>通用型</h4>
+                        <span class="plan_d">
                         <p>日常运营活动
                             并行计算应用
-                            普通数据处理</p>
+                            普通数据处理</p></span>
                     </div>
-                    <div class="col-md-6">
-                        <img src="img/1111.png" alt="" style="width:90px;height: 100px;margin-top: 10px">
+                    <div class="plan_a2">
+                        <img src="img/1111.png" alt="" class="plan_img">
                         <div><a href="" style="color: #0073b2">查看详情</a></div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="plan_a">
                 <div class="plan_in">
-                    <div class="plan_c col-md-6">
+                    <div class="plan_c">
                         <h4>进阶型</h4>
+                        <span class="plan_d">
                         <p>中小型 Web 服务器
                             企业运营活动
-                            普通数据处理服务</p>
+                            普通数据处理服务</p></span>
                     </div>
-                    <div class="col-md-6">
-                        <img src="img/1111.png" alt="" style="width:90px;height: 100px;margin-top: 10px">
+                    <div class="plan_a2">
+                        <img src="img/1111.png" alt="" class="plan_img">
                         <div><a href="" style="color: #0073b2">查看详情</a></div>
                     </div>
 
@@ -283,10 +280,10 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
     <div class="index_02">
         <h3>海纳百川，各行各业解决方案</h3>
         <p>开发者工具、建站、API、企业应用、支持云端应用服务</p>
-        <div class="main">
+        <div class="an_main">
             <!-- FIFTH EXAMPLE -->
             <div class="view view-fifth">
-                <img src="img/ff.jpg"/>
+                <img src="img/ff.jpg" style="width: 100%"/>
                 <div class="mask">
                     <h2>电商解决方案</h2>
                     <img src="img/dain.png" alt="">
@@ -297,7 +294,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
                 </div>
             </div>
             <div class="view view-fifth">
-                <img src="img/gg.jpg"/>
+                <img src="img/gg.jpg" style="width: 100%"/>
                 <div class="mask">
                     <h2>APP解决方案</h2>
                     <img src="img/app.png" alt="">
@@ -306,7 +303,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
                 </div>
             </div>
             <div class="view view-fifth">
-                <img src="img/hh.jpg"/>
+                <img src="img/hh.jpg" style="width: 100%"/>
                 <div class="mask">
                     <h2>金融解决方案</h2>
                     <img src="img/jin.png" alt="">
@@ -315,7 +312,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
                 </div>
             </div>
             <div class="view view-fifth">
-                <img src="img/dd.jpg"/>
+                <img src="img/dd.jpg" style="width: 100%"/>
                 <div class="mask">
                     <h2>游戏解决方案</h2>
                     <img src="img/game.png" alt="">
@@ -324,7 +321,7 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
                 </div>
             </div>
             <div class="view view-fifth">
-                <img src="img/jj.jpg"/>
+                <img src="img/jj.jpg" style="width: 100%"/>
                 <div class="mask">
                     <h2>医疗解决方案</h2>
                     <img src="img/yi.png" alt="">
@@ -341,60 +338,66 @@ z-index: 99999;width: 100%;background-color: rgba(85, 97, 101, 0)">
         <h3>海纳百川，精选全球的高品质软件与服务</h3>
         <p>开发者工具、建站、API、企业应用、支持云端应用服务</p>
         <div class="index_content">
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/24.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                <div> 预装建站系统 | 服务器软件 | 应用开发工具
-                </div></a>
+                    <img src="img/24.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具
+                    </div>
+                </a>
             </div>
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/25.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div></a>
+                    <img src="img/25.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div>
+                </a>
             </div>
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/26.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div></a>
+                    <img src="img/26.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div>
+                </a>
             </div>
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/27.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div></a>
+                    <img src="img/27.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div>
+                </a>
             </div>
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/28.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                <div> 预装建站系统 | 服务器软件 | 应用开发工具</div></a>
+                    <img src="img/28.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div>
+                </a>
             </div>
-            <div class="content_in col-md-4">
+            <div class="content_in col-md-4 col-sm-6">
                 <a href="">
-                <img src="img/29.png" alt="">
-                <h4>软件环境</h4>
-                <div>
-                    预装PHP | 预装JAVA | 预装ASP/.NET
-                </div>
-                <div> 预装建站系统 | 服务器软件 | 应用开发工具</div></a>
+                    <img src="img/29.png" alt="">
+                    <h4>软件环境</h4>
+                    <div>
+                        预装PHP | 预装JAVA | 预装ASP/.NET
+                    </div>
+                    <div> 预装建站系统 | 服务器软件 | 应用开发工具</div>
+                </a>
             </div>
             <div style="clear: both"></div>
         </div>
