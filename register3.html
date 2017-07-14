@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>企业认证</title>
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="css/css测试.css" type="text/css" />
+    <link rel="stylesheet" href="css/css测试.css" type="text/css"/>
 </head>
 <body style="background-color: #e6e6e6">
 
@@ -26,7 +26,8 @@
                     <a href="index.html" class="sim-button button01"><span data-hover="先知首页">&nbsp;先知首页&nbsp;</span></a>
                 </li>
                 <li>
-                    <a href="video_home.html" class="sim-button button01"><span data-hover="在线直播">&nbsp;在线直播&nbsp;</span></a>
+                    <a href="video_home.html" class="sim-button button01"><span
+                            data-hover="在线直播">&nbsp;在线直播&nbsp;</span></a>
                 </li>
                 <li>
                     <a href="#" class="sim-button button01"><span data-hover="会员中心">&nbsp;会员中心&nbsp;</span></a>
@@ -83,7 +84,31 @@
 
 
 <div class="register1_all">
+    <form action="">
+        <div class="register2_in">
+            <div class="r2_left">
+                <div class="r2_ne">
+                    <div style="margin-top: 130px">
+                        <span class="r3_span" style="">营业执照&nbsp;</span>&emsp;
+                        <input type="file" class="nicefile" style="float: left"/>
+                    </div>
+                    <div class="r2_every" style="margin-left: 3px">
+                        <span>邮&emsp;&emsp;箱</span>&emsp;<input type="text" class="r3_g">
+                    </div>
+                    <button class="r2_button">提 交</button>
+                </div>
 
+            </div>
+        </div>
+        <div class="r2_bottom">
+            <img src="img/bvbv.png" alt="">
+            <div>
+                <h4>先知承诺</h4>
+                <p>企业资料仅用于资质审核，先知平台绝不向第三方泄露，请您放心填写。</p>
+            </div>
+        </div>
+
+    </form>
 </div>
 
 <!--进度-->
@@ -91,12 +116,29 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/stepBar.js"></script>
 <script type="text/javascript">
-    $(function(){
+    $(function () {
 
         stepBar.init("stepBar", {
-            step : 3,
-            change : true,
-            animation : false
+            step: 3,
+            change: true,
+            animation: false
+        });
+
+    });
+</script>
+
+<!--上传文件-->
+<script src="js/jquery-v1.8.2.js"></script>
+<script src="js/jquery.nice-file-input.js"></script>
+<script type="text/javascript">
+    $('document').ready(function () {
+        $(".nicefile").niceFileInput({
+            'width': '390',
+            'height': '35',
+            'btnText': '浏 览',
+            'btnWidth': '100',
+            'margin': '20',
+            'background-color': '#f8a91e'
         });
 
     });

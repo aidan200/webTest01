@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司详细列表</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/css测试.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <script src="lib/html5shiv/html5shiv.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--轮播-->
+    <script src="lib/jquery/jquery.color.js"></script>
+    <script src="js/index_lunbo.js"></script>
+    <script>
+        $(function () {
+            m_lo1("#companylist")
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".com_one,.com_moreu1").hover(function () {
+                $(".com_moreu1").toggle();
+            });
+            $(".com_moreu1,.com_one").hover(function () {
+                $(".com_moreu1,.com_one").css("background-color", "#fff");
+            }, function () {
+                $(".com_moreu1,.com_one").css("background-color", "rgba(228, 228, 228, 0.12)");
+            });
+
+            $(".com_two,.com_moreu2").hover(function () {
+                $(".com_moreu2").toggle();
+            });
+            $(".com_moreu2,.com_two").hover(function () {
+                $(".com_moreu2,.com_two").css("background-color", "#fff");
+            }, function () {
+                $(".com_moreu2,.com_two").css("background-color", "rgba(228, 228, 228, 0.12)");
+            });
+
+            $(".com_three,.com_moreu3").hover(function () {
+                $(".com_moreu3").toggle();
+            });
+            $(".com_moreu3,.com_three").hover(function () {
+                $(".com_moreu3,.com_three").css("background-color", "#fff");
+            }, function () {
+                $(".com_moreu3,.com_three").css("background-color", "rgba(228, 228, 228, 0.12)");
+            });
+
+            $(".com_four,.com_moreu4").hover(function () {
+                $(".com_moreu4").toggle();
+            });
+            $(".com_moreu4,.com_four").hover(function () {
+                $(".com_moreu4,.com_four").css("background-color", "#fff");
+            }, function () {
+                $(".com_moreu4,.com_four").css("background-color", "rgba(228, 228, 228, 0.12)");
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-bottom" role="navigation">
+    <div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#two">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="img/LOGO1.png" alt="" class="alllogo">
+        </div>
+        <div class="navbar-collapse collapse" id="two">
+            <ul class="nav navbar-nav nav_2">
+                <li>
+                    <a href="index.html" class="sim-button button01"><span data-hover="先知首页">&nbsp;先知首页&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="video_home.html" class="sim-button button01"><span
+                            data-hover="在线直播">&nbsp;在线直播&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#" class="sim-button button01"><span data-hover="会员中心">&nbsp;会员中心&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="blog_home.html" class="sim-button button01"><span data-hover="先知社区">&nbsp;先知社区&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="zp_index.html" class="sim-button button01"><span data-hover="招聘中心">&nbsp;招聘中心&nbsp;</span></a>
+                </li>
+                <li>
+                    <a href="#" class="sim-button button01"><span data-hover="活动中心">&nbsp;活动中心&nbsp;</span></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav nav_1">
+                <li class="login1">
+                    <a href="#"><span>登录</span></a>
+                </li>
+                <li class="register1">
+                    <a href="#"><span>注册</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="com_container">
+
+    <div class="comd_topimg"></div>
+    <!--行业名企-->
+    <div class="comd_top">
+        <div class="comd_choose">
+            <a href="#0" class="cd-popup-trigger">选择行业</a>
+        </div>
+    </div>
+    <div class="com_position1">
+
+        <div class="com_top">
+            <h4>行业名 <a href=""><span>更多名企 &raquo</span></a>></h4>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+            <div class="com_com">
+                <a href="" style="display: block;text-align: center">
+                    <img src="img/small.png" alt="" class="com_comi" style=""/>
+                </a>
+                <a href=""><p class="com_p1">推荐算法工程师</p></a>
+                <a href=""><p class="com_p1">结构工程师-手机</p></a>
+                <div class="com_morem">
+                    <a href=""><span class="com_sp" style="color: #fc6866">更多 &raquo</span></a>
+                    <span class="com_sp"> <span style="color: #fc6866">500 </span> 个在招职位</span>
+                </div>
+                <div>
+                    <span class="com_sp2">绩效奖金</span>
+                    <span class="com_sp2">带薪年假</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cmd_bottom"></div>
+
+</div>
+
+
+<div class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+        <p>选择行业分类</p>
+
+        <div class="comd_table">
+            <table class="table table-bordered comd_in">
+                <tbody>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="comd_td"><span>互联网·游戏·软件</span></td>
+                    <td>
+                        <ul class="comd_ul">
+                            <li><input type="checkbox" data-type="checkbox" data-value="互联网/移动互联网/电子商务" value="1"/>互联网/移动互联网/电子商务</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="网络游戏" value="2"/>网络游戏</li>
+                            <li> <input type="checkbox" data-type="checkbox" data-value="计算机软件" value="3"/>计算机软件</li>
+                            <li><input type="checkbox" data-type="checkbox" data-value="IT服务/系统集成" value="4"/>IT服务/系统集成</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <ul class="cd-buttons">
+            <li><a href="#0">确定</a></li>
+            <li><a href="#0" class="cd-popup-close">取消</a></li>
+        </ul>
+        <a href="#0" class="cd-popup-close cmd_close img-replace">Close</a>
+    </div>
+</div>
+
+<script src="js/maini.js"></script>
+</body>
+</html>
